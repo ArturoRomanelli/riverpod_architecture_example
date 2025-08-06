@@ -1,5 +1,5 @@
-// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// coverage:ignore-file
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
@@ -9,52 +9,128 @@ part of 'current.api.model.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// dart format off
 T _$identity<T>(T value) => value;
-
-final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-CurrentApiModel _$CurrentApiModelFromJson(Map<String, dynamic> json) {
-  return _CurrentApiModel.fromJson(json);
-}
 
 /// @nodoc
 mixin _$CurrentApiModel {
-  ConditionApiModel get condition => throw _privateConstructorUsedError;
-  DateTime get lastUpdated => throw _privateConstructorUsedError;
-  double get tempC => throw _privateConstructorUsedError;
-  double get windKph => throw _privateConstructorUsedError;
-  double get humidity => throw _privateConstructorUsedError;
-  double get feelslikeC => throw _privateConstructorUsedError;
-  int? get lastUpdatedEpoch => throw _privateConstructorUsedError;
-  double? get tempF => throw _privateConstructorUsedError;
-  int? get isDay => throw _privateConstructorUsedError;
-  double? get windMph => throw _privateConstructorUsedError;
-  double? get windDegree => throw _privateConstructorUsedError;
-  String? get windDir => throw _privateConstructorUsedError;
-  double? get pressureMb => throw _privateConstructorUsedError;
-  double? get pressureIn => throw _privateConstructorUsedError;
-  double? get precipMm => throw _privateConstructorUsedError;
-  double? get precipIn => throw _privateConstructorUsedError;
-  double? get cloud => throw _privateConstructorUsedError;
-  double? get feelslikeF => throw _privateConstructorUsedError;
-  double? get visKm => throw _privateConstructorUsedError;
-  double? get visMiles => throw _privateConstructorUsedError;
-  double? get uv => throw _privateConstructorUsedError;
-  double? get gustMph => throw _privateConstructorUsedError;
-  double? get gustKph => throw _privateConstructorUsedError;
+  ConditionApiModel get condition;
+  DateTime get lastUpdated;
+  double get tempC;
+  double get windKph;
+  double get humidity;
+  double get feelslikeC;
+  int? get lastUpdatedEpoch;
+  double? get tempF;
+  int? get isDay;
+  double? get windMph;
+  double? get windDegree;
+  String? get windDir;
+  double? get pressureMb;
+  double? get pressureIn;
+  double? get precipMm;
+  double? get precipIn;
+  double? get cloud;
+  double? get feelslikeF;
+  double? get visKm;
+  double? get visMiles;
+  double? get uv;
+  double? get gustMph;
+  double? get gustKph;
 
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+  /// Create a copy of CurrentApiModel
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
   $CurrentApiModelCopyWith<CurrentApiModel> get copyWith =>
-      throw _privateConstructorUsedError;
+      _$CurrentApiModelCopyWithImpl<CurrentApiModel>(
+          this as CurrentApiModel, _$identity);
+
+  /// Serializes this CurrentApiModel to a JSON map.
+  Map<String, dynamic> toJson();
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is CurrentApiModel &&
+            (identical(other.condition, condition) ||
+                other.condition == condition) &&
+            (identical(other.lastUpdated, lastUpdated) ||
+                other.lastUpdated == lastUpdated) &&
+            (identical(other.tempC, tempC) || other.tempC == tempC) &&
+            (identical(other.windKph, windKph) || other.windKph == windKph) &&
+            (identical(other.humidity, humidity) ||
+                other.humidity == humidity) &&
+            (identical(other.feelslikeC, feelslikeC) ||
+                other.feelslikeC == feelslikeC) &&
+            (identical(other.lastUpdatedEpoch, lastUpdatedEpoch) ||
+                other.lastUpdatedEpoch == lastUpdatedEpoch) &&
+            (identical(other.tempF, tempF) || other.tempF == tempF) &&
+            (identical(other.isDay, isDay) || other.isDay == isDay) &&
+            (identical(other.windMph, windMph) || other.windMph == windMph) &&
+            (identical(other.windDegree, windDegree) ||
+                other.windDegree == windDegree) &&
+            (identical(other.windDir, windDir) || other.windDir == windDir) &&
+            (identical(other.pressureMb, pressureMb) ||
+                other.pressureMb == pressureMb) &&
+            (identical(other.pressureIn, pressureIn) ||
+                other.pressureIn == pressureIn) &&
+            (identical(other.precipMm, precipMm) ||
+                other.precipMm == precipMm) &&
+            (identical(other.precipIn, precipIn) ||
+                other.precipIn == precipIn) &&
+            (identical(other.cloud, cloud) || other.cloud == cloud) &&
+            (identical(other.feelslikeF, feelslikeF) ||
+                other.feelslikeF == feelslikeF) &&
+            (identical(other.visKm, visKm) || other.visKm == visKm) &&
+            (identical(other.visMiles, visMiles) ||
+                other.visMiles == visMiles) &&
+            (identical(other.uv, uv) || other.uv == uv) &&
+            (identical(other.gustMph, gustMph) || other.gustMph == gustMph) &&
+            (identical(other.gustKph, gustKph) || other.gustKph == gustKph));
+  }
+
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  int get hashCode => Object.hashAll([
+        runtimeType,
+        condition,
+        lastUpdated,
+        tempC,
+        windKph,
+        humidity,
+        feelslikeC,
+        lastUpdatedEpoch,
+        tempF,
+        isDay,
+        windMph,
+        windDegree,
+        windDir,
+        pressureMb,
+        pressureIn,
+        precipMm,
+        precipIn,
+        cloud,
+        feelslikeF,
+        visKm,
+        visMiles,
+        uv,
+        gustMph,
+        gustKph
+      ]);
+
+  @override
+  String toString() {
+    return 'CurrentApiModel(condition: $condition, lastUpdated: $lastUpdated, tempC: $tempC, windKph: $windKph, humidity: $humidity, feelslikeC: $feelslikeC, lastUpdatedEpoch: $lastUpdatedEpoch, tempF: $tempF, isDay: $isDay, windMph: $windMph, windDegree: $windDegree, windDir: $windDir, pressureMb: $pressureMb, pressureIn: $pressureIn, precipMm: $precipMm, precipIn: $precipIn, cloud: $cloud, feelslikeF: $feelslikeF, visKm: $visKm, visMiles: $visMiles, uv: $uv, gustMph: $gustMph, gustKph: $gustKph)';
+  }
 }
 
 /// @nodoc
-abstract class $CurrentApiModelCopyWith<$Res> {
+abstract mixin class $CurrentApiModelCopyWith<$Res> {
   factory $CurrentApiModelCopyWith(
-          CurrentApiModel value, $Res Function(CurrentApiModel) then) =
-      _$CurrentApiModelCopyWithImpl<$Res, CurrentApiModel>;
+          CurrentApiModel value, $Res Function(CurrentApiModel) _then) =
+      _$CurrentApiModelCopyWithImpl;
   @useResult
   $Res call(
       {ConditionApiModel condition,
@@ -85,15 +161,15 @@ abstract class $CurrentApiModelCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$CurrentApiModelCopyWithImpl<$Res, $Val extends CurrentApiModel>
+class _$CurrentApiModelCopyWithImpl<$Res>
     implements $CurrentApiModelCopyWith<$Res> {
-  _$CurrentApiModelCopyWithImpl(this._value, this._then);
+  _$CurrentApiModelCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final CurrentApiModel _self;
+  final $Res Function(CurrentApiModel) _then;
 
+  /// Create a copy of CurrentApiModel
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -121,284 +197,415 @@ class _$CurrentApiModelCopyWithImpl<$Res, $Val extends CurrentApiModel>
     Object? gustMph = freezed,
     Object? gustKph = freezed,
   }) {
-    return _then(_value.copyWith(
+    return _then(_self.copyWith(
       condition: null == condition
-          ? _value.condition
+          ? _self.condition
           : condition // ignore: cast_nullable_to_non_nullable
               as ConditionApiModel,
       lastUpdated: null == lastUpdated
-          ? _value.lastUpdated
+          ? _self.lastUpdated
           : lastUpdated // ignore: cast_nullable_to_non_nullable
               as DateTime,
       tempC: null == tempC
-          ? _value.tempC
+          ? _self.tempC
           : tempC // ignore: cast_nullable_to_non_nullable
               as double,
       windKph: null == windKph
-          ? _value.windKph
+          ? _self.windKph
           : windKph // ignore: cast_nullable_to_non_nullable
               as double,
       humidity: null == humidity
-          ? _value.humidity
+          ? _self.humidity
           : humidity // ignore: cast_nullable_to_non_nullable
               as double,
       feelslikeC: null == feelslikeC
-          ? _value.feelslikeC
+          ? _self.feelslikeC
           : feelslikeC // ignore: cast_nullable_to_non_nullable
               as double,
       lastUpdatedEpoch: freezed == lastUpdatedEpoch
-          ? _value.lastUpdatedEpoch
+          ? _self.lastUpdatedEpoch
           : lastUpdatedEpoch // ignore: cast_nullable_to_non_nullable
               as int?,
       tempF: freezed == tempF
-          ? _value.tempF
+          ? _self.tempF
           : tempF // ignore: cast_nullable_to_non_nullable
               as double?,
       isDay: freezed == isDay
-          ? _value.isDay
+          ? _self.isDay
           : isDay // ignore: cast_nullable_to_non_nullable
               as int?,
       windMph: freezed == windMph
-          ? _value.windMph
+          ? _self.windMph
           : windMph // ignore: cast_nullable_to_non_nullable
               as double?,
       windDegree: freezed == windDegree
-          ? _value.windDegree
+          ? _self.windDegree
           : windDegree // ignore: cast_nullable_to_non_nullable
               as double?,
       windDir: freezed == windDir
-          ? _value.windDir
+          ? _self.windDir
           : windDir // ignore: cast_nullable_to_non_nullable
               as String?,
       pressureMb: freezed == pressureMb
-          ? _value.pressureMb
+          ? _self.pressureMb
           : pressureMb // ignore: cast_nullable_to_non_nullable
               as double?,
       pressureIn: freezed == pressureIn
-          ? _value.pressureIn
+          ? _self.pressureIn
           : pressureIn // ignore: cast_nullable_to_non_nullable
               as double?,
       precipMm: freezed == precipMm
-          ? _value.precipMm
+          ? _self.precipMm
           : precipMm // ignore: cast_nullable_to_non_nullable
               as double?,
       precipIn: freezed == precipIn
-          ? _value.precipIn
+          ? _self.precipIn
           : precipIn // ignore: cast_nullable_to_non_nullable
               as double?,
       cloud: freezed == cloud
-          ? _value.cloud
+          ? _self.cloud
           : cloud // ignore: cast_nullable_to_non_nullable
               as double?,
       feelslikeF: freezed == feelslikeF
-          ? _value.feelslikeF
+          ? _self.feelslikeF
           : feelslikeF // ignore: cast_nullable_to_non_nullable
               as double?,
       visKm: freezed == visKm
-          ? _value.visKm
+          ? _self.visKm
           : visKm // ignore: cast_nullable_to_non_nullable
               as double?,
       visMiles: freezed == visMiles
-          ? _value.visMiles
+          ? _self.visMiles
           : visMiles // ignore: cast_nullable_to_non_nullable
               as double?,
       uv: freezed == uv
-          ? _value.uv
+          ? _self.uv
           : uv // ignore: cast_nullable_to_non_nullable
               as double?,
       gustMph: freezed == gustMph
-          ? _value.gustMph
+          ? _self.gustMph
           : gustMph // ignore: cast_nullable_to_non_nullable
               as double?,
       gustKph: freezed == gustKph
-          ? _value.gustKph
+          ? _self.gustKph
           : gustKph // ignore: cast_nullable_to_non_nullable
               as double?,
-    ) as $Val);
+    ));
   }
 
+  /// Create a copy of CurrentApiModel
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ConditionApiModelCopyWith<$Res> get condition {
-    return $ConditionApiModelCopyWith<$Res>(_value.condition, (value) {
-      return _then(_value.copyWith(condition: value) as $Val);
+    return $ConditionApiModelCopyWith<$Res>(_self.condition, (value) {
+      return _then(_self.copyWith(condition: value));
     });
   }
 }
 
-/// @nodoc
-abstract class _$$CurrentApiModelImplCopyWith<$Res>
-    implements $CurrentApiModelCopyWith<$Res> {
-  factory _$$CurrentApiModelImplCopyWith(_$CurrentApiModelImpl value,
-          $Res Function(_$CurrentApiModelImpl) then) =
-      __$$CurrentApiModelImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call(
-      {ConditionApiModel condition,
-      DateTime lastUpdated,
-      double tempC,
-      double windKph,
-      double humidity,
-      double feelslikeC,
-      int? lastUpdatedEpoch,
-      double? tempF,
-      int? isDay,
-      double? windMph,
-      double? windDegree,
-      String? windDir,
-      double? pressureMb,
-      double? pressureIn,
-      double? precipMm,
-      double? precipIn,
-      double? cloud,
-      double? feelslikeF,
-      double? visKm,
-      double? visMiles,
-      double? uv,
-      double? gustMph,
-      double? gustKph});
+/// Adds pattern-matching-related methods to [CurrentApiModel].
+extension CurrentApiModelPatterns on CurrentApiModel {
+  /// A variant of `map` that fallback to returning `orElse`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
 
-  @override
-  $ConditionApiModelCopyWith<$Res> get condition;
-}
-
-/// @nodoc
-class __$$CurrentApiModelImplCopyWithImpl<$Res>
-    extends _$CurrentApiModelCopyWithImpl<$Res, _$CurrentApiModelImpl>
-    implements _$$CurrentApiModelImplCopyWith<$Res> {
-  __$$CurrentApiModelImplCopyWithImpl(
-      _$CurrentApiModelImpl _value, $Res Function(_$CurrentApiModelImpl) _then)
-      : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? condition = null,
-    Object? lastUpdated = null,
-    Object? tempC = null,
-    Object? windKph = null,
-    Object? humidity = null,
-    Object? feelslikeC = null,
-    Object? lastUpdatedEpoch = freezed,
-    Object? tempF = freezed,
-    Object? isDay = freezed,
-    Object? windMph = freezed,
-    Object? windDegree = freezed,
-    Object? windDir = freezed,
-    Object? pressureMb = freezed,
-    Object? pressureIn = freezed,
-    Object? precipMm = freezed,
-    Object? precipIn = freezed,
-    Object? cloud = freezed,
-    Object? feelslikeF = freezed,
-    Object? visKm = freezed,
-    Object? visMiles = freezed,
-    Object? uv = freezed,
-    Object? gustMph = freezed,
-    Object? gustKph = freezed,
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(_CurrentApiModel value)? $default, {
+    required TResult orElse(),
   }) {
-    return _then(_$CurrentApiModelImpl(
-      condition: null == condition
-          ? _value.condition
-          : condition // ignore: cast_nullable_to_non_nullable
-              as ConditionApiModel,
-      lastUpdated: null == lastUpdated
-          ? _value.lastUpdated
-          : lastUpdated // ignore: cast_nullable_to_non_nullable
-              as DateTime,
-      tempC: null == tempC
-          ? _value.tempC
-          : tempC // ignore: cast_nullable_to_non_nullable
-              as double,
-      windKph: null == windKph
-          ? _value.windKph
-          : windKph // ignore: cast_nullable_to_non_nullable
-              as double,
-      humidity: null == humidity
-          ? _value.humidity
-          : humidity // ignore: cast_nullable_to_non_nullable
-              as double,
-      feelslikeC: null == feelslikeC
-          ? _value.feelslikeC
-          : feelslikeC // ignore: cast_nullable_to_non_nullable
-              as double,
-      lastUpdatedEpoch: freezed == lastUpdatedEpoch
-          ? _value.lastUpdatedEpoch
-          : lastUpdatedEpoch // ignore: cast_nullable_to_non_nullable
-              as int?,
-      tempF: freezed == tempF
-          ? _value.tempF
-          : tempF // ignore: cast_nullable_to_non_nullable
-              as double?,
-      isDay: freezed == isDay
-          ? _value.isDay
-          : isDay // ignore: cast_nullable_to_non_nullable
-              as int?,
-      windMph: freezed == windMph
-          ? _value.windMph
-          : windMph // ignore: cast_nullable_to_non_nullable
-              as double?,
-      windDegree: freezed == windDegree
-          ? _value.windDegree
-          : windDegree // ignore: cast_nullable_to_non_nullable
-              as double?,
-      windDir: freezed == windDir
-          ? _value.windDir
-          : windDir // ignore: cast_nullable_to_non_nullable
-              as String?,
-      pressureMb: freezed == pressureMb
-          ? _value.pressureMb
-          : pressureMb // ignore: cast_nullable_to_non_nullable
-              as double?,
-      pressureIn: freezed == pressureIn
-          ? _value.pressureIn
-          : pressureIn // ignore: cast_nullable_to_non_nullable
-              as double?,
-      precipMm: freezed == precipMm
-          ? _value.precipMm
-          : precipMm // ignore: cast_nullable_to_non_nullable
-              as double?,
-      precipIn: freezed == precipIn
-          ? _value.precipIn
-          : precipIn // ignore: cast_nullable_to_non_nullable
-              as double?,
-      cloud: freezed == cloud
-          ? _value.cloud
-          : cloud // ignore: cast_nullable_to_non_nullable
-              as double?,
-      feelslikeF: freezed == feelslikeF
-          ? _value.feelslikeF
-          : feelslikeF // ignore: cast_nullable_to_non_nullable
-              as double?,
-      visKm: freezed == visKm
-          ? _value.visKm
-          : visKm // ignore: cast_nullable_to_non_nullable
-              as double?,
-      visMiles: freezed == visMiles
-          ? _value.visMiles
-          : visMiles // ignore: cast_nullable_to_non_nullable
-              as double?,
-      uv: freezed == uv
-          ? _value.uv
-          : uv // ignore: cast_nullable_to_non_nullable
-              as double?,
-      gustMph: freezed == gustMph
-          ? _value.gustMph
-          : gustMph // ignore: cast_nullable_to_non_nullable
-              as double?,
-      gustKph: freezed == gustKph
-          ? _value.gustKph
-          : gustKph // ignore: cast_nullable_to_non_nullable
-              as double?,
-    ));
+    final _that = this;
+    switch (_that) {
+      case _CurrentApiModel() when $default != null:
+        return $default(_that);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// Callbacks receives the raw object, upcasted.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case final Subclass2 value:
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(_CurrentApiModel value) $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _CurrentApiModel():
+        return $default(_that);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `map` that fallback to returning `null`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(_CurrentApiModel value)? $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _CurrentApiModel() when $default != null:
+        return $default(_that);
+      case _:
+        return null;
+    }
+  }
+
+  /// A variant of `when` that fallback to an `orElse` callback.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(
+            ConditionApiModel condition,
+            DateTime lastUpdated,
+            double tempC,
+            double windKph,
+            double humidity,
+            double feelslikeC,
+            int? lastUpdatedEpoch,
+            double? tempF,
+            int? isDay,
+            double? windMph,
+            double? windDegree,
+            String? windDir,
+            double? pressureMb,
+            double? pressureIn,
+            double? precipMm,
+            double? precipIn,
+            double? cloud,
+            double? feelslikeF,
+            double? visKm,
+            double? visMiles,
+            double? uv,
+            double? gustMph,
+            double? gustKph)?
+        $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _CurrentApiModel() when $default != null:
+        return $default(
+            _that.condition,
+            _that.lastUpdated,
+            _that.tempC,
+            _that.windKph,
+            _that.humidity,
+            _that.feelslikeC,
+            _that.lastUpdatedEpoch,
+            _that.tempF,
+            _that.isDay,
+            _that.windMph,
+            _that.windDegree,
+            _that.windDir,
+            _that.pressureMb,
+            _that.pressureIn,
+            _that.precipMm,
+            _that.precipIn,
+            _that.cloud,
+            _that.feelslikeF,
+            _that.visKm,
+            _that.visMiles,
+            _that.uv,
+            _that.gustMph,
+            _that.gustKph);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// As opposed to `map`, this offers destructuring.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case Subclass2(:final field2):
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(
+            ConditionApiModel condition,
+            DateTime lastUpdated,
+            double tempC,
+            double windKph,
+            double humidity,
+            double feelslikeC,
+            int? lastUpdatedEpoch,
+            double? tempF,
+            int? isDay,
+            double? windMph,
+            double? windDegree,
+            String? windDir,
+            double? pressureMb,
+            double? pressureIn,
+            double? precipMm,
+            double? precipIn,
+            double? cloud,
+            double? feelslikeF,
+            double? visKm,
+            double? visMiles,
+            double? uv,
+            double? gustMph,
+            double? gustKph)
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _CurrentApiModel():
+        return $default(
+            _that.condition,
+            _that.lastUpdated,
+            _that.tempC,
+            _that.windKph,
+            _that.humidity,
+            _that.feelslikeC,
+            _that.lastUpdatedEpoch,
+            _that.tempF,
+            _that.isDay,
+            _that.windMph,
+            _that.windDegree,
+            _that.windDir,
+            _that.pressureMb,
+            _that.pressureIn,
+            _that.precipMm,
+            _that.precipIn,
+            _that.cloud,
+            _that.feelslikeF,
+            _that.visKm,
+            _that.visMiles,
+            _that.uv,
+            _that.gustMph,
+            _that.gustKph);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `when` that fallback to returning `null`
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(
+            ConditionApiModel condition,
+            DateTime lastUpdated,
+            double tempC,
+            double windKph,
+            double humidity,
+            double feelslikeC,
+            int? lastUpdatedEpoch,
+            double? tempF,
+            int? isDay,
+            double? windMph,
+            double? windDegree,
+            String? windDir,
+            double? pressureMb,
+            double? pressureIn,
+            double? precipMm,
+            double? precipIn,
+            double? cloud,
+            double? feelslikeF,
+            double? visKm,
+            double? visMiles,
+            double? uv,
+            double? gustMph,
+            double? gustKph)?
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _CurrentApiModel() when $default != null:
+        return $default(
+            _that.condition,
+            _that.lastUpdated,
+            _that.tempC,
+            _that.windKph,
+            _that.humidity,
+            _that.feelslikeC,
+            _that.lastUpdatedEpoch,
+            _that.tempF,
+            _that.isDay,
+            _that.windMph,
+            _that.windDegree,
+            _that.windDir,
+            _that.pressureMb,
+            _that.pressureIn,
+            _that.precipMm,
+            _that.precipIn,
+            _that.cloud,
+            _that.feelslikeF,
+            _that.visKm,
+            _that.visMiles,
+            _that.uv,
+            _that.gustMph,
+            _that.gustKph);
+      case _:
+        return null;
+    }
   }
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$CurrentApiModelImpl implements _CurrentApiModel {
-  const _$CurrentApiModelImpl(
+class _CurrentApiModel implements CurrentApiModel {
+  const _CurrentApiModel(
       {required this.condition,
       required this.lastUpdated,
       required this.tempC,
@@ -422,9 +629,8 @@ class _$CurrentApiModelImpl implements _CurrentApiModel {
       this.uv,
       this.gustMph,
       this.gustKph});
-
-  factory _$CurrentApiModelImpl.fromJson(Map<String, dynamic> json) =>
-      _$$CurrentApiModelImplFromJson(json);
+  factory _CurrentApiModel.fromJson(Map<String, dynamic> json) =>
+      _$CurrentApiModelFromJson(json);
 
   @override
   final ConditionApiModel condition;
@@ -473,16 +679,26 @@ class _$CurrentApiModelImpl implements _CurrentApiModel {
   @override
   final double? gustKph;
 
+  /// Create a copy of CurrentApiModel
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  String toString() {
-    return 'CurrentApiModel(condition: $condition, lastUpdated: $lastUpdated, tempC: $tempC, windKph: $windKph, humidity: $humidity, feelslikeC: $feelslikeC, lastUpdatedEpoch: $lastUpdatedEpoch, tempF: $tempF, isDay: $isDay, windMph: $windMph, windDegree: $windDegree, windDir: $windDir, pressureMb: $pressureMb, pressureIn: $pressureIn, precipMm: $precipMm, precipIn: $precipIn, cloud: $cloud, feelslikeF: $feelslikeF, visKm: $visKm, visMiles: $visMiles, uv: $uv, gustMph: $gustMph, gustKph: $gustKph)';
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
+  _$CurrentApiModelCopyWith<_CurrentApiModel> get copyWith =>
+      __$CurrentApiModelCopyWithImpl<_CurrentApiModel>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$CurrentApiModelToJson(
+      this,
+    );
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$CurrentApiModelImpl &&
+            other is _CurrentApiModel &&
             (identical(other.condition, condition) ||
                 other.condition == condition) &&
             (identical(other.lastUpdated, lastUpdated) ||
@@ -520,7 +736,7 @@ class _$CurrentApiModelImpl implements _CurrentApiModel {
             (identical(other.gustKph, gustKph) || other.gustKph == gustKph));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -549,98 +765,191 @@ class _$CurrentApiModelImpl implements _CurrentApiModel {
         gustKph
       ]);
 
-  @JsonKey(ignore: true)
   @override
-  @pragma('vm:prefer-inline')
-  _$$CurrentApiModelImplCopyWith<_$CurrentApiModelImpl> get copyWith =>
-      __$$CurrentApiModelImplCopyWithImpl<_$CurrentApiModelImpl>(
-          this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$CurrentApiModelImplToJson(
-      this,
-    );
+  String toString() {
+    return 'CurrentApiModel(condition: $condition, lastUpdated: $lastUpdated, tempC: $tempC, windKph: $windKph, humidity: $humidity, feelslikeC: $feelslikeC, lastUpdatedEpoch: $lastUpdatedEpoch, tempF: $tempF, isDay: $isDay, windMph: $windMph, windDegree: $windDegree, windDir: $windDir, pressureMb: $pressureMb, pressureIn: $pressureIn, precipMm: $precipMm, precipIn: $precipIn, cloud: $cloud, feelslikeF: $feelslikeF, visKm: $visKm, visMiles: $visMiles, uv: $uv, gustMph: $gustMph, gustKph: $gustKph)';
   }
 }
 
-abstract class _CurrentApiModel implements CurrentApiModel {
-  const factory _CurrentApiModel(
-      {required final ConditionApiModel condition,
-      required final DateTime lastUpdated,
-      required final double tempC,
-      required final double windKph,
-      required final double humidity,
-      required final double feelslikeC,
-      final int? lastUpdatedEpoch,
-      final double? tempF,
-      final int? isDay,
-      final double? windMph,
-      final double? windDegree,
-      final String? windDir,
-      final double? pressureMb,
-      final double? pressureIn,
-      final double? precipMm,
-      final double? precipIn,
-      final double? cloud,
-      final double? feelslikeF,
-      final double? visKm,
-      final double? visMiles,
-      final double? uv,
-      final double? gustMph,
-      final double? gustKph}) = _$CurrentApiModelImpl;
+/// @nodoc
+abstract mixin class _$CurrentApiModelCopyWith<$Res>
+    implements $CurrentApiModelCopyWith<$Res> {
+  factory _$CurrentApiModelCopyWith(
+          _CurrentApiModel value, $Res Function(_CurrentApiModel) _then) =
+      __$CurrentApiModelCopyWithImpl;
+  @override
+  @useResult
+  $Res call(
+      {ConditionApiModel condition,
+      DateTime lastUpdated,
+      double tempC,
+      double windKph,
+      double humidity,
+      double feelslikeC,
+      int? lastUpdatedEpoch,
+      double? tempF,
+      int? isDay,
+      double? windMph,
+      double? windDegree,
+      String? windDir,
+      double? pressureMb,
+      double? pressureIn,
+      double? precipMm,
+      double? precipIn,
+      double? cloud,
+      double? feelslikeF,
+      double? visKm,
+      double? visMiles,
+      double? uv,
+      double? gustMph,
+      double? gustKph});
 
-  factory _CurrentApiModel.fromJson(Map<String, dynamic> json) =
-      _$CurrentApiModelImpl.fromJson;
-
   @override
-  ConditionApiModel get condition;
-  @override
-  DateTime get lastUpdated;
-  @override
-  double get tempC;
-  @override
-  double get windKph;
-  @override
-  double get humidity;
-  @override
-  double get feelslikeC;
-  @override
-  int? get lastUpdatedEpoch;
-  @override
-  double? get tempF;
-  @override
-  int? get isDay;
-  @override
-  double? get windMph;
-  @override
-  double? get windDegree;
-  @override
-  String? get windDir;
-  @override
-  double? get pressureMb;
-  @override
-  double? get pressureIn;
-  @override
-  double? get precipMm;
-  @override
-  double? get precipIn;
-  @override
-  double? get cloud;
-  @override
-  double? get feelslikeF;
-  @override
-  double? get visKm;
-  @override
-  double? get visMiles;
-  @override
-  double? get uv;
-  @override
-  double? get gustMph;
-  @override
-  double? get gustKph;
-  @override
-  @JsonKey(ignore: true)
-  _$$CurrentApiModelImplCopyWith<_$CurrentApiModelImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+  $ConditionApiModelCopyWith<$Res> get condition;
 }
+
+/// @nodoc
+class __$CurrentApiModelCopyWithImpl<$Res>
+    implements _$CurrentApiModelCopyWith<$Res> {
+  __$CurrentApiModelCopyWithImpl(this._self, this._then);
+
+  final _CurrentApiModel _self;
+  final $Res Function(_CurrentApiModel) _then;
+
+  /// Create a copy of CurrentApiModel
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @pragma('vm:prefer-inline')
+  $Res call({
+    Object? condition = null,
+    Object? lastUpdated = null,
+    Object? tempC = null,
+    Object? windKph = null,
+    Object? humidity = null,
+    Object? feelslikeC = null,
+    Object? lastUpdatedEpoch = freezed,
+    Object? tempF = freezed,
+    Object? isDay = freezed,
+    Object? windMph = freezed,
+    Object? windDegree = freezed,
+    Object? windDir = freezed,
+    Object? pressureMb = freezed,
+    Object? pressureIn = freezed,
+    Object? precipMm = freezed,
+    Object? precipIn = freezed,
+    Object? cloud = freezed,
+    Object? feelslikeF = freezed,
+    Object? visKm = freezed,
+    Object? visMiles = freezed,
+    Object? uv = freezed,
+    Object? gustMph = freezed,
+    Object? gustKph = freezed,
+  }) {
+    return _then(_CurrentApiModel(
+      condition: null == condition
+          ? _self.condition
+          : condition // ignore: cast_nullable_to_non_nullable
+              as ConditionApiModel,
+      lastUpdated: null == lastUpdated
+          ? _self.lastUpdated
+          : lastUpdated // ignore: cast_nullable_to_non_nullable
+              as DateTime,
+      tempC: null == tempC
+          ? _self.tempC
+          : tempC // ignore: cast_nullable_to_non_nullable
+              as double,
+      windKph: null == windKph
+          ? _self.windKph
+          : windKph // ignore: cast_nullable_to_non_nullable
+              as double,
+      humidity: null == humidity
+          ? _self.humidity
+          : humidity // ignore: cast_nullable_to_non_nullable
+              as double,
+      feelslikeC: null == feelslikeC
+          ? _self.feelslikeC
+          : feelslikeC // ignore: cast_nullable_to_non_nullable
+              as double,
+      lastUpdatedEpoch: freezed == lastUpdatedEpoch
+          ? _self.lastUpdatedEpoch
+          : lastUpdatedEpoch // ignore: cast_nullable_to_non_nullable
+              as int?,
+      tempF: freezed == tempF
+          ? _self.tempF
+          : tempF // ignore: cast_nullable_to_non_nullable
+              as double?,
+      isDay: freezed == isDay
+          ? _self.isDay
+          : isDay // ignore: cast_nullable_to_non_nullable
+              as int?,
+      windMph: freezed == windMph
+          ? _self.windMph
+          : windMph // ignore: cast_nullable_to_non_nullable
+              as double?,
+      windDegree: freezed == windDegree
+          ? _self.windDegree
+          : windDegree // ignore: cast_nullable_to_non_nullable
+              as double?,
+      windDir: freezed == windDir
+          ? _self.windDir
+          : windDir // ignore: cast_nullable_to_non_nullable
+              as String?,
+      pressureMb: freezed == pressureMb
+          ? _self.pressureMb
+          : pressureMb // ignore: cast_nullable_to_non_nullable
+              as double?,
+      pressureIn: freezed == pressureIn
+          ? _self.pressureIn
+          : pressureIn // ignore: cast_nullable_to_non_nullable
+              as double?,
+      precipMm: freezed == precipMm
+          ? _self.precipMm
+          : precipMm // ignore: cast_nullable_to_non_nullable
+              as double?,
+      precipIn: freezed == precipIn
+          ? _self.precipIn
+          : precipIn // ignore: cast_nullable_to_non_nullable
+              as double?,
+      cloud: freezed == cloud
+          ? _self.cloud
+          : cloud // ignore: cast_nullable_to_non_nullable
+              as double?,
+      feelslikeF: freezed == feelslikeF
+          ? _self.feelslikeF
+          : feelslikeF // ignore: cast_nullable_to_non_nullable
+              as double?,
+      visKm: freezed == visKm
+          ? _self.visKm
+          : visKm // ignore: cast_nullable_to_non_nullable
+              as double?,
+      visMiles: freezed == visMiles
+          ? _self.visMiles
+          : visMiles // ignore: cast_nullable_to_non_nullable
+              as double?,
+      uv: freezed == uv
+          ? _self.uv
+          : uv // ignore: cast_nullable_to_non_nullable
+              as double?,
+      gustMph: freezed == gustMph
+          ? _self.gustMph
+          : gustMph // ignore: cast_nullable_to_non_nullable
+              as double?,
+      gustKph: freezed == gustKph
+          ? _self.gustKph
+          : gustKph // ignore: cast_nullable_to_non_nullable
+              as double?,
+    ));
+  }
+
+  /// Create a copy of CurrentApiModel
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @pragma('vm:prefer-inline')
+  $ConditionApiModelCopyWith<$Res> get condition {
+    return $ConditionApiModelCopyWith<$Res>(_self.condition, (value) {
+      return _then(_self.copyWith(condition: value));
+    });
+  }
+}
+
+// dart format on

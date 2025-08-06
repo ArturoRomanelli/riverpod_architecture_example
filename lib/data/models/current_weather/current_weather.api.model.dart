@@ -8,7 +8,7 @@ part 'current_weather.api.model.freezed.dart';
 part 'current_weather.api.model.g.dart';
 
 @freezed
-class CurrentWeatherApiModel with _$CurrentWeatherApiModel {
+abstract class CurrentWeatherApiModel with _$CurrentWeatherApiModel {
   const factory CurrentWeatherApiModel({
     required CurrentApiModel current,
     CurrentWeatherLocationApiModel? location,

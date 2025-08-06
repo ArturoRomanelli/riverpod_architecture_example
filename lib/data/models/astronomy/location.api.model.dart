@@ -6,7 +6,7 @@ part 'location.api.model.freezed.dart';
 part 'location.api.model.g.dart';
 
 @freezed
-class LocationApiModel with _$LocationApiModel {
+abstract class LocationApiModel with _$LocationApiModel {
   const factory LocationApiModel({
     @JsonKey(name: 'localtime') required String localTime,
     String? name,

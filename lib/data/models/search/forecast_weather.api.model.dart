@@ -9,7 +9,7 @@ part 'forecast_weather.api.model.freezed.dart';
 part 'forecast_weather.api.model.g.dart';
 
 @freezed
-class ForecastWeatherApiModel with _$ForecastWeatherApiModel {
+abstract class ForecastWeatherApiModel with _$ForecastWeatherApiModel {
   const factory ForecastWeatherApiModel({
     required CurrentForecastApiModel current,
     required ForecastApiModel forecast,

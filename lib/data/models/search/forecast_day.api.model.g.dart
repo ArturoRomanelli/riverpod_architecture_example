@@ -6,17 +6,16 @@ part of 'forecast_day.api.model.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$ForecastDayApiModelImpl _$$ForecastDayApiModelImplFromJson(
-        Map<String, dynamic> json) =>
+_ForecastDayApiModel _$ForecastDayApiModelFromJson(Map<String, dynamic> json) =>
     $checkedCreate(
-      r'_$ForecastDayApiModelImpl',
+      '_ForecastDayApiModel',
       json,
       ($checkedConvert) {
-        final val = _$ForecastDayApiModelImpl(
+        final val = _ForecastDayApiModel(
           date: $checkedConvert('date', (v) => DateTime.parse(v as String)),
           day: $checkedConvert(
               'day', (v) => DayApiModel.fromJson(v as Map<String, dynamic>)),
-          dateEpoch: $checkedConvert('date_epoch', (v) => v as int?),
+          dateEpoch: $checkedConvert('date_epoch', (v) => (v as num?)?.toInt()),
           astro: $checkedConvert(
               'astro',
               (v) => v == null
@@ -33,8 +32,8 @@ _$ForecastDayApiModelImpl _$$ForecastDayApiModelImplFromJson(
       fieldKeyMap: const {'dateEpoch': 'date_epoch'},
     );
 
-Map<String, dynamic> _$$ForecastDayApiModelImplToJson(
-        _$ForecastDayApiModelImpl instance) =>
+Map<String, dynamic> _$ForecastDayApiModelToJson(
+        _ForecastDayApiModel instance) =>
     <String, dynamic>{
       'date': instance.date.toIso8601String(),
       'day': instance.day.toJson(),

@@ -6,7 +6,7 @@ import '../../../data/models/astronomy/astronomy.api.model.dart';
 part 'sun_times.model.freezed.dart';
 
 @freezed
-class SunTimes with _$SunTimes {
+abstract class SunTimes with _$SunTimes {
   const factory SunTimes({
     required DateTime timestamp,
     required TimeOfDay sunrise,

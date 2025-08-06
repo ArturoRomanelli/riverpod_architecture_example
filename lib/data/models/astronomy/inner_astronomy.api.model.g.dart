@@ -6,13 +6,13 @@ part of 'inner_astronomy.api.model.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$InnerAstronomyApiModelImpl _$$InnerAstronomyApiModelImplFromJson(
+_InnerAstronomyApiModel _$InnerAstronomyApiModelFromJson(
         Map<String, dynamic> json) =>
     $checkedCreate(
-      r'_$InnerAstronomyApiModelImpl',
+      '_InnerAstronomyApiModel',
       json,
       ($checkedConvert) {
-        final val = _$InnerAstronomyApiModelImpl(
+        final val = _InnerAstronomyApiModel(
           astro: $checkedConvert('astro',
               (v) => AstroApiModel.fromJson(v as Map<String, dynamic>)),
         );
@@ -20,8 +20,8 @@ _$InnerAstronomyApiModelImpl _$$InnerAstronomyApiModelImplFromJson(
       },
     );
 
-Map<String, dynamic> _$$InnerAstronomyApiModelImplToJson(
-        _$InnerAstronomyApiModelImpl instance) =>
+Map<String, dynamic> _$InnerAstronomyApiModelToJson(
+        _InnerAstronomyApiModel instance) =>
     <String, dynamic>{
       'astro': instance.astro.toJson(),
     };

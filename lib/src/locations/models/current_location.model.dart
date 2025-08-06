@@ -5,7 +5,7 @@ import '../../../data/models/search/location.model.dart';
 part 'current_location.model.freezed.dart';
 
 @freezed
-class CurrentLocation with _$CurrentLocation {
+abstract class CurrentLocation with _$CurrentLocation {
   const factory CurrentLocation({
     /// City name
     required String cityName,

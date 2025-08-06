@@ -7,7 +7,7 @@ part 'forecast.api.model.freezed.dart';
 part 'forecast.api.model.g.dart';
 
 @freezed
-class ForecastApiModel with _$ForecastApiModel {
+abstract class ForecastApiModel with _$ForecastApiModel {
   const factory ForecastApiModel({
     @Default([]) Iterable<ForecastDayApiModel> forecastday,
   }) = _ForecastApiModel;

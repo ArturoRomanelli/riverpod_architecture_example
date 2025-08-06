@@ -6,7 +6,7 @@ part 'astro.api.model.freezed.dart';
 part 'astro.api.model.g.dart';
 
 @freezed
-class AstroApiModel with _$AstroApiModel {
+abstract class AstroApiModel with _$AstroApiModel {
   const factory AstroApiModel({
     required String sunrise,
     required String sunset,

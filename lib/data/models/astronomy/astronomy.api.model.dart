@@ -8,7 +8,7 @@ part 'astronomy.api.model.freezed.dart';
 part 'astronomy.api.model.g.dart';
 
 @freezed
-class AstronomyApiModel with _$AstronomyApiModel {
+abstract class AstronomyApiModel with _$AstronomyApiModel {
   const factory AstronomyApiModel({
     required InnerAstronomyApiModel astronomy,
     LocationApiModel? location,

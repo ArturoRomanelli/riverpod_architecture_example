@@ -6,16 +6,15 @@ part of 'location.model.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$LocationApiModelImpl _$$LocationApiModelImplFromJson(
-        Map<String, dynamic> json) =>
+_LocationApiModel _$LocationApiModelFromJson(Map<String, dynamic> json) =>
     $checkedCreate(
-      r'_$LocationApiModelImpl',
+      '_LocationApiModel',
       json,
       ($checkedConvert) {
-        final val = _$LocationApiModelImpl(
+        final val = _LocationApiModel(
           name: $checkedConvert('name', (v) => v as String),
           country: $checkedConvert('country', (v) => v as String),
-          id: $checkedConvert('id', (v) => v as int?),
+          id: $checkedConvert('id', (v) => (v as num?)?.toInt()),
           region: $checkedConvert('region', (v) => v as String?),
           lat: $checkedConvert('lat', (v) => (v as num?)?.toDouble()),
           lon: $checkedConvert('lon', (v) => (v as num?)?.toDouble()),
@@ -25,8 +24,7 @@ _$LocationApiModelImpl _$$LocationApiModelImplFromJson(
       },
     );
 
-Map<String, dynamic> _$$LocationApiModelImplToJson(
-        _$LocationApiModelImpl instance) =>
+Map<String, dynamic> _$LocationApiModelToJson(_LocationApiModel instance) =>
     <String, dynamic>{
       'name': instance.name,
       'country': instance.country,

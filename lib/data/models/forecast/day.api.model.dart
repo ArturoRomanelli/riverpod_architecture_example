@@ -7,7 +7,7 @@ part 'day.api.model.freezed.dart';
 part 'day.api.model.g.dart';
 
 @freezed
-class DayApiModel with _$DayApiModel {
+abstract class DayApiModel with _$DayApiModel {
   const factory DayApiModel({
     required ConditionApiModel condition,
     required double avgtempC,

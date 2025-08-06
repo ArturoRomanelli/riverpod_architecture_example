@@ -20,6 +20,8 @@ final connectivityCheckProvider = AutoDisposeProvider<ConnectionCheck>.internal(
   allTransitiveDependencies: null,
 );
 
+@Deprecated('Will be removed in 3.0. Use Ref instead')
+// ignore: unused_element
 typedef ConnectivityCheckRef = AutoDisposeProviderRef<ConnectionCheck>;
 String _$connectivityStreamHash() =>
     r'821946b5ee81062711ade750a8c597368e640768';
@@ -36,6 +38,8 @@ final connectivityStreamProvider = AutoDisposeStreamProvider<bool>.internal(
   allTransitiveDependencies: null,
 );
 
+@Deprecated('Will be removed in 3.0. Use Ref instead')
+// ignore: unused_element
 typedef ConnectivityStreamRef = AutoDisposeStreamProviderRef<bool>;
 // ignore_for_file: type=lint
-// ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member
+// ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member, deprecated_member_use_from_same_package

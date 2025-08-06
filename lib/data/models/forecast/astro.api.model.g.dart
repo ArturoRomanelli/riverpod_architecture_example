@@ -6,20 +6,20 @@ part of 'astro.api.model.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$AstroApiModelImpl _$$AstroApiModelImplFromJson(Map<String, dynamic> json) =>
+_AstroApiModel _$AstroApiModelFromJson(Map<String, dynamic> json) =>
     $checkedCreate(
-      r'_$AstroApiModelImpl',
+      '_AstroApiModel',
       json,
       ($checkedConvert) {
-        final val = _$AstroApiModelImpl(
+        final val = _AstroApiModel(
           $checkedConvert('sunrise', (v) => v as String?),
           $checkedConvert('sunset', (v) => v as String?),
           $checkedConvert('moonrise', (v) => v as String?),
           $checkedConvert('moonset', (v) => v as String?),
           $checkedConvert('moon_phase', (v) => v as String?),
-          $checkedConvert('moon_illumination', (v) => v as int?),
-          $checkedConvert('is_moon_up', (v) => v as int?),
-          $checkedConvert('is_sun_up', (v) => v as int?),
+          $checkedConvert('moon_illumination', (v) => (v as num?)?.toInt()),
+          $checkedConvert('is_moon_up', (v) => (v as num?)?.toInt()),
+          $checkedConvert('is_sun_up', (v) => (v as num?)?.toInt()),
         );
         return val;
       },
@@ -31,7 +31,7 @@ _$AstroApiModelImpl _$$AstroApiModelImplFromJson(Map<String, dynamic> json) =>
       },
     );
 
-Map<String, dynamic> _$$AstroApiModelImplToJson(_$AstroApiModelImpl instance) =>
+Map<String, dynamic> _$AstroApiModelToJson(_AstroApiModel instance) =>
     <String, dynamic>{
       'sunrise': instance.sunrise,
       'sunset': instance.sunset,

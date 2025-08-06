@@ -6,23 +6,21 @@ part of 'condition.api.model.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$ConditionApiModelImpl _$$ConditionApiModelImplFromJson(
-        Map<String, dynamic> json) =>
+_ConditionApiModel _$ConditionApiModelFromJson(Map<String, dynamic> json) =>
     $checkedCreate(
-      r'_$ConditionApiModelImpl',
+      '_ConditionApiModel',
       json,
       ($checkedConvert) {
-        final val = _$ConditionApiModelImpl(
+        final val = _ConditionApiModel(
           text: $checkedConvert('text', (v) => v as String),
           icon: $checkedConvert('icon', (v) => v as String),
-          code: $checkedConvert('code', (v) => v as int?),
+          code: $checkedConvert('code', (v) => (v as num?)?.toInt()),
         );
         return val;
       },
     );
 
-Map<String, dynamic> _$$ConditionApiModelImplToJson(
-        _$ConditionApiModelImpl instance) =>
+Map<String, dynamic> _$ConditionApiModelToJson(_ConditionApiModel instance) =>
     <String, dynamic>{
       'text': instance.text,
       'icon': instance.icon,

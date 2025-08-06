@@ -245,6 +245,22 @@ class CurrentWeatherDbModelData extends DataClass
         humidity: humidity ?? this.humidity,
         perceivedTemp: perceivedTemp ?? this.perceivedTemp,
       );
+  CurrentWeatherDbModelData copyWithCompanion(
+      CurrentWeatherDbModelCompanion data) {
+    return CurrentWeatherDbModelData(
+      id: data.id.present ? data.id.value : this.id,
+      weather: data.weather.present ? data.weather.value : this.weather,
+      image: data.image.present ? data.image.value : this.image,
+      updatedAt: data.updatedAt.present ? data.updatedAt.value : this.updatedAt,
+      temp: data.temp.present ? data.temp.value : this.temp,
+      wind: data.wind.present ? data.wind.value : this.wind,
+      humidity: data.humidity.present ? data.humidity.value : this.humidity,
+      perceivedTemp: data.perceivedTemp.present
+          ? data.perceivedTemp.value
+          : this.perceivedTemp,
+    );
+  }
+
   @override
   String toString() {
     return (StringBuffer('CurrentWeatherDbModelData(')
@@ -416,7 +432,7 @@ class CurrentWeatherDbModelCompanion
 
 abstract class _$AppDatabase extends GeneratedDatabase {
   _$AppDatabase(QueryExecutor e) : super(e);
-  _$AppDatabaseManager get managers => _$AppDatabaseManager(this);
+  $AppDatabaseManager get managers => $AppDatabaseManager(this);
   late final $CurrentWeatherDbModelTable currentWeatherDbModel =
       $CurrentWeatherDbModelTable(this);
   @override
@@ -426,7 +442,7 @@ abstract class _$AppDatabase extends GeneratedDatabase {
   List<DatabaseSchemaEntity> get allSchemaEntities => [currentWeatherDbModel];
 }
 
-typedef $$CurrentWeatherDbModelTableInsertCompanionBuilder
+typedef $$CurrentWeatherDbModelTableCreateCompanionBuilder
     = CurrentWeatherDbModelCompanion Function({
   required int id,
   required String weather,
@@ -451,27 +467,140 @@ typedef $$CurrentWeatherDbModelTableUpdateCompanionBuilder
   Value<int> rowid,
 });
 
+class $$CurrentWeatherDbModelTableFilterComposer
+    extends Composer<_$AppDatabase, $CurrentWeatherDbModelTable> {
+  $$CurrentWeatherDbModelTableFilterComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  ColumnFilters<int> get id => $composableBuilder(
+      column: $table.id, builder: (column) => ColumnFilters(column));
+
+  ColumnFilters<String> get weather => $composableBuilder(
+      column: $table.weather, builder: (column) => ColumnFilters(column));
+
+  ColumnFilters<String> get image => $composableBuilder(
+      column: $table.image, builder: (column) => ColumnFilters(column));
+
+  ColumnFilters<DateTime> get updatedAt => $composableBuilder(
+      column: $table.updatedAt, builder: (column) => ColumnFilters(column));
+
+  ColumnFilters<int> get temp => $composableBuilder(
+      column: $table.temp, builder: (column) => ColumnFilters(column));
+
+  ColumnFilters<double> get wind => $composableBuilder(
+      column: $table.wind, builder: (column) => ColumnFilters(column));
+
+  ColumnFilters<double> get humidity => $composableBuilder(
+      column: $table.humidity, builder: (column) => ColumnFilters(column));
+
+  ColumnFilters<double> get perceivedTemp => $composableBuilder(
+      column: $table.perceivedTemp, builder: (column) => ColumnFilters(column));
+}
+
+class $$CurrentWeatherDbModelTableOrderingComposer
+    extends Composer<_$AppDatabase, $CurrentWeatherDbModelTable> {
+  $$CurrentWeatherDbModelTableOrderingComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  ColumnOrderings<int> get id => $composableBuilder(
+      column: $table.id, builder: (column) => ColumnOrderings(column));
+
+  ColumnOrderings<String> get weather => $composableBuilder(
+      column: $table.weather, builder: (column) => ColumnOrderings(column));
+
+  ColumnOrderings<String> get image => $composableBuilder(
+      column: $table.image, builder: (column) => ColumnOrderings(column));
+
+  ColumnOrderings<DateTime> get updatedAt => $composableBuilder(
+      column: $table.updatedAt, builder: (column) => ColumnOrderings(column));
+
+  ColumnOrderings<int> get temp => $composableBuilder(
+      column: $table.temp, builder: (column) => ColumnOrderings(column));
+
+  ColumnOrderings<double> get wind => $composableBuilder(
+      column: $table.wind, builder: (column) => ColumnOrderings(column));
+
+  ColumnOrderings<double> get humidity => $composableBuilder(
+      column: $table.humidity, builder: (column) => ColumnOrderings(column));
+
+  ColumnOrderings<double> get perceivedTemp => $composableBuilder(
+      column: $table.perceivedTemp,
+      builder: (column) => ColumnOrderings(column));
+}
+
+class $$CurrentWeatherDbModelTableAnnotationComposer
+    extends Composer<_$AppDatabase, $CurrentWeatherDbModelTable> {
+  $$CurrentWeatherDbModelTableAnnotationComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  GeneratedColumn<int> get id =>
+      $composableBuilder(column: $table.id, builder: (column) => column);
+
+  GeneratedColumn<String> get weather =>
+      $composableBuilder(column: $table.weather, builder: (column) => column);
+
+  GeneratedColumn<String> get image =>
+      $composableBuilder(column: $table.image, builder: (column) => column);
+
+  GeneratedColumn<DateTime> get updatedAt =>
+      $composableBuilder(column: $table.updatedAt, builder: (column) => column);
+
+  GeneratedColumn<int> get temp =>
+      $composableBuilder(column: $table.temp, builder: (column) => column);
+
+  GeneratedColumn<double> get wind =>
+      $composableBuilder(column: $table.wind, builder: (column) => column);
+
+  GeneratedColumn<double> get humidity =>
+      $composableBuilder(column: $table.humidity, builder: (column) => column);
+
+  GeneratedColumn<double> get perceivedTemp => $composableBuilder(
+      column: $table.perceivedTemp, builder: (column) => column);
+}
+
 class $$CurrentWeatherDbModelTableTableManager extends RootTableManager<
     _$AppDatabase,
     $CurrentWeatherDbModelTable,
     CurrentWeatherDbModelData,
     $$CurrentWeatherDbModelTableFilterComposer,
     $$CurrentWeatherDbModelTableOrderingComposer,
-    $$CurrentWeatherDbModelTableProcessedTableManager,
-    $$CurrentWeatherDbModelTableInsertCompanionBuilder,
-    $$CurrentWeatherDbModelTableUpdateCompanionBuilder> {
+    $$CurrentWeatherDbModelTableAnnotationComposer,
+    $$CurrentWeatherDbModelTableCreateCompanionBuilder,
+    $$CurrentWeatherDbModelTableUpdateCompanionBuilder,
+    (
+      CurrentWeatherDbModelData,
+      BaseReferences<_$AppDatabase, $CurrentWeatherDbModelTable,
+          CurrentWeatherDbModelData>
+    ),
+    CurrentWeatherDbModelData,
+    PrefetchHooks Function()> {
   $$CurrentWeatherDbModelTableTableManager(
       _$AppDatabase db, $CurrentWeatherDbModelTable table)
       : super(TableManagerState(
           db: db,
           table: table,
-          filteringComposer: $$CurrentWeatherDbModelTableFilterComposer(
-              ComposerState(db, table)),
-          orderingComposer: $$CurrentWeatherDbModelTableOrderingComposer(
-              ComposerState(db, table)),
-          getChildManagerBuilder: (p) =>
-              $$CurrentWeatherDbModelTableProcessedTableManager(p),
-          getUpdateCompanionBuilder: ({
+          createFilteringComposer: () =>
+              $$CurrentWeatherDbModelTableFilterComposer(
+                  $db: db, $table: table),
+          createOrderingComposer: () =>
+              $$CurrentWeatherDbModelTableOrderingComposer(
+                  $db: db, $table: table),
+          createComputedFieldComposer: () =>
+              $$CurrentWeatherDbModelTableAnnotationComposer(
+                  $db: db, $table: table),
+          updateCompanionCallback: ({
             Value<int> id = const Value.absent(),
             Value<String> weather = const Value.absent(),
             Value<String> image = const Value.absent(),
@@ -493,7 +622,7 @@ class $$CurrentWeatherDbModelTableTableManager extends RootTableManager<
             perceivedTemp: perceivedTemp,
             rowid: rowid,
           ),
-          getInsertCompanionBuilder: ({
+          createCompanionCallback: ({
             required int id,
             required String weather,
             required String image,
@@ -515,113 +644,34 @@ class $$CurrentWeatherDbModelTableTableManager extends RootTableManager<
             perceivedTemp: perceivedTemp,
             rowid: rowid,
           ),
+          withReferenceMapper: (p0) => p0
+              .map((e) => (e.readTable(table), BaseReferences(db, table, e)))
+              .toList(),
+          prefetchHooksCallback: null,
         ));
 }
 
-class $$CurrentWeatherDbModelTableProcessedTableManager
-    extends ProcessedTableManager<
+typedef $$CurrentWeatherDbModelTableProcessedTableManager
+    = ProcessedTableManager<
         _$AppDatabase,
         $CurrentWeatherDbModelTable,
         CurrentWeatherDbModelData,
         $$CurrentWeatherDbModelTableFilterComposer,
         $$CurrentWeatherDbModelTableOrderingComposer,
-        $$CurrentWeatherDbModelTableProcessedTableManager,
-        $$CurrentWeatherDbModelTableInsertCompanionBuilder,
-        $$CurrentWeatherDbModelTableUpdateCompanionBuilder> {
-  $$CurrentWeatherDbModelTableProcessedTableManager(super.$state);
-}
+        $$CurrentWeatherDbModelTableAnnotationComposer,
+        $$CurrentWeatherDbModelTableCreateCompanionBuilder,
+        $$CurrentWeatherDbModelTableUpdateCompanionBuilder,
+        (
+          CurrentWeatherDbModelData,
+          BaseReferences<_$AppDatabase, $CurrentWeatherDbModelTable,
+              CurrentWeatherDbModelData>
+        ),
+        CurrentWeatherDbModelData,
+        PrefetchHooks Function()>;
 
-class $$CurrentWeatherDbModelTableFilterComposer
-    extends FilterComposer<_$AppDatabase, $CurrentWeatherDbModelTable> {
-  $$CurrentWeatherDbModelTableFilterComposer(super.$state);
-  ColumnFilters<int> get id => $state.composableBuilder(
-      column: $state.table.id,
-      builder: (column, joinBuilders) =>
-          ColumnFilters(column, joinBuilders: joinBuilders));
-
-  ColumnFilters<String> get weather => $state.composableBuilder(
-      column: $state.table.weather,
-      builder: (column, joinBuilders) =>
-          ColumnFilters(column, joinBuilders: joinBuilders));
-
-  ColumnFilters<String> get image => $state.composableBuilder(
-      column: $state.table.image,
-      builder: (column, joinBuilders) =>
-          ColumnFilters(column, joinBuilders: joinBuilders));
-
-  ColumnFilters<DateTime> get updatedAt => $state.composableBuilder(
-      column: $state.table.updatedAt,
-      builder: (column, joinBuilders) =>
-          ColumnFilters(column, joinBuilders: joinBuilders));
-
-  ColumnFilters<int> get temp => $state.composableBuilder(
-      column: $state.table.temp,
-      builder: (column, joinBuilders) =>
-          ColumnFilters(column, joinBuilders: joinBuilders));
-
-  ColumnFilters<double> get wind => $state.composableBuilder(
-      column: $state.table.wind,
-      builder: (column, joinBuilders) =>
-          ColumnFilters(column, joinBuilders: joinBuilders));
-
-  ColumnFilters<double> get humidity => $state.composableBuilder(
-      column: $state.table.humidity,
-      builder: (column, joinBuilders) =>
-          ColumnFilters(column, joinBuilders: joinBuilders));
-
-  ColumnFilters<double> get perceivedTemp => $state.composableBuilder(
-      column: $state.table.perceivedTemp,
-      builder: (column, joinBuilders) =>
-          ColumnFilters(column, joinBuilders: joinBuilders));
-}
-
-class $$CurrentWeatherDbModelTableOrderingComposer
-    extends OrderingComposer<_$AppDatabase, $CurrentWeatherDbModelTable> {
-  $$CurrentWeatherDbModelTableOrderingComposer(super.$state);
-  ColumnOrderings<int> get id => $state.composableBuilder(
-      column: $state.table.id,
-      builder: (column, joinBuilders) =>
-          ColumnOrderings(column, joinBuilders: joinBuilders));
-
-  ColumnOrderings<String> get weather => $state.composableBuilder(
-      column: $state.table.weather,
-      builder: (column, joinBuilders) =>
-          ColumnOrderings(column, joinBuilders: joinBuilders));
-
-  ColumnOrderings<String> get image => $state.composableBuilder(
-      column: $state.table.image,
-      builder: (column, joinBuilders) =>
-          ColumnOrderings(column, joinBuilders: joinBuilders));
-
-  ColumnOrderings<DateTime> get updatedAt => $state.composableBuilder(
-      column: $state.table.updatedAt,
-      builder: (column, joinBuilders) =>
-          ColumnOrderings(column, joinBuilders: joinBuilders));
-
-  ColumnOrderings<int> get temp => $state.composableBuilder(
-      column: $state.table.temp,
-      builder: (column, joinBuilders) =>
-          ColumnOrderings(column, joinBuilders: joinBuilders));
-
-  ColumnOrderings<double> get wind => $state.composableBuilder(
-      column: $state.table.wind,
-      builder: (column, joinBuilders) =>
-          ColumnOrderings(column, joinBuilders: joinBuilders));
-
-  ColumnOrderings<double> get humidity => $state.composableBuilder(
-      column: $state.table.humidity,
-      builder: (column, joinBuilders) =>
-          ColumnOrderings(column, joinBuilders: joinBuilders));
-
-  ColumnOrderings<double> get perceivedTemp => $state.composableBuilder(
-      column: $state.table.perceivedTemp,
-      builder: (column, joinBuilders) =>
-          ColumnOrderings(column, joinBuilders: joinBuilders));
-}
-
-class _$AppDatabaseManager {
+class $AppDatabaseManager {
   final _$AppDatabase _db;
-  _$AppDatabaseManager(this._db);
+  $AppDatabaseManager(this._db);
   $$CurrentWeatherDbModelTableTableManager get currentWeatherDbModel =>
       $$CurrentWeatherDbModelTableTableManager(_db, _db.currentWeatherDbModel);
 }
@@ -643,6 +693,8 @@ final localDbProvider = AutoDisposeFutureProvider<AppDatabase>.internal(
   allTransitiveDependencies: null,
 );
 
+@Deprecated('Will be removed in 3.0. Use Ref instead')
+// ignore: unused_element
 typedef LocalDbRef = AutoDisposeFutureProviderRef<AppDatabase>;
 // ignore_for_file: type=lint
-// ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member
+// ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member, deprecated_member_use_from_same_package

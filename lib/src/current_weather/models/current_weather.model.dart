@@ -8,7 +8,7 @@ import '../../../data/models/current_weather/current_weather.api.model.dart';
 part 'current_weather.model.freezed.dart';
 
 @freezed
-class CurrentWeather with _$CurrentWeather {
+abstract class CurrentWeather with _$CurrentWeather {
   const factory CurrentWeather({
     /// our current temperature
     required int temp,

@@ -1,5 +1,5 @@
-// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// coverage:ignore-file
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
@@ -9,34 +9,57 @@ part of 'forecast_day.api.model.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// dart format off
 T _$identity<T>(T value) => value;
-
-final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-ForecastDayApiModel _$ForecastDayApiModelFromJson(Map<String, dynamic> json) {
-  return _ForecastDayApiModel.fromJson(json);
-}
 
 /// @nodoc
 mixin _$ForecastDayApiModel {
-  DateTime get date => throw _privateConstructorUsedError;
-  DayApiModel get day => throw _privateConstructorUsedError;
-  int? get dateEpoch => throw _privateConstructorUsedError;
-  AstroApiModel? get astro => throw _privateConstructorUsedError;
-  List<HourApiModel>? get hour => throw _privateConstructorUsedError;
+  DateTime get date;
+  DayApiModel get day;
+  int? get dateEpoch;
+  AstroApiModel? get astro;
+  List<HourApiModel>? get hour;
 
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+  /// Create a copy of ForecastDayApiModel
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
   $ForecastDayApiModelCopyWith<ForecastDayApiModel> get copyWith =>
-      throw _privateConstructorUsedError;
+      _$ForecastDayApiModelCopyWithImpl<ForecastDayApiModel>(
+          this as ForecastDayApiModel, _$identity);
+
+  /// Serializes this ForecastDayApiModel to a JSON map.
+  Map<String, dynamic> toJson();
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is ForecastDayApiModel &&
+            (identical(other.date, date) || other.date == date) &&
+            (identical(other.day, day) || other.day == day) &&
+            (identical(other.dateEpoch, dateEpoch) ||
+                other.dateEpoch == dateEpoch) &&
+            (identical(other.astro, astro) || other.astro == astro) &&
+            const DeepCollectionEquality().equals(other.hour, hour));
+  }
+
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  int get hashCode => Object.hash(runtimeType, date, day, dateEpoch, astro,
+      const DeepCollectionEquality().hash(hour));
+
+  @override
+  String toString() {
+    return 'ForecastDayApiModel(date: $date, day: $day, dateEpoch: $dateEpoch, astro: $astro, hour: $hour)';
+  }
 }
 
 /// @nodoc
-abstract class $ForecastDayApiModelCopyWith<$Res> {
+abstract mixin class $ForecastDayApiModelCopyWith<$Res> {
   factory $ForecastDayApiModelCopyWith(
-          ForecastDayApiModel value, $Res Function(ForecastDayApiModel) then) =
-      _$ForecastDayApiModelCopyWithImpl<$Res, ForecastDayApiModel>;
+          ForecastDayApiModel value, $Res Function(ForecastDayApiModel) _then) =
+      _$ForecastDayApiModelCopyWithImpl;
   @useResult
   $Res call(
       {DateTime date,
@@ -50,15 +73,15 @@ abstract class $ForecastDayApiModelCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$ForecastDayApiModelCopyWithImpl<$Res, $Val extends ForecastDayApiModel>
+class _$ForecastDayApiModelCopyWithImpl<$Res>
     implements $ForecastDayApiModelCopyWith<$Res> {
-  _$ForecastDayApiModelCopyWithImpl(this._value, this._then);
+  _$ForecastDayApiModelCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final ForecastDayApiModel _self;
+  final $Res Function(ForecastDayApiModel) _then;
 
+  /// Create a copy of ForecastDayApiModel
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -68,127 +91,233 @@ class _$ForecastDayApiModelCopyWithImpl<$Res, $Val extends ForecastDayApiModel>
     Object? astro = freezed,
     Object? hour = freezed,
   }) {
-    return _then(_value.copyWith(
+    return _then(_self.copyWith(
       date: null == date
-          ? _value.date
+          ? _self.date
           : date // ignore: cast_nullable_to_non_nullable
               as DateTime,
       day: null == day
-          ? _value.day
+          ? _self.day
           : day // ignore: cast_nullable_to_non_nullable
               as DayApiModel,
       dateEpoch: freezed == dateEpoch
-          ? _value.dateEpoch
+          ? _self.dateEpoch
           : dateEpoch // ignore: cast_nullable_to_non_nullable
               as int?,
       astro: freezed == astro
-          ? _value.astro
+          ? _self.astro
           : astro // ignore: cast_nullable_to_non_nullable
               as AstroApiModel?,
       hour: freezed == hour
-          ? _value.hour
-          : hour // ignore: cast_nullable_to_non_nullable
-              as List<HourApiModel>?,
-    ) as $Val);
-  }
-
-  @override
-  @pragma('vm:prefer-inline')
-  $DayApiModelCopyWith<$Res> get day {
-    return $DayApiModelCopyWith<$Res>(_value.day, (value) {
-      return _then(_value.copyWith(day: value) as $Val);
-    });
-  }
-
-  @override
-  @pragma('vm:prefer-inline')
-  $AstroApiModelCopyWith<$Res>? get astro {
-    if (_value.astro == null) {
-      return null;
-    }
-
-    return $AstroApiModelCopyWith<$Res>(_value.astro!, (value) {
-      return _then(_value.copyWith(astro: value) as $Val);
-    });
-  }
-}
-
-/// @nodoc
-abstract class _$$ForecastDayApiModelImplCopyWith<$Res>
-    implements $ForecastDayApiModelCopyWith<$Res> {
-  factory _$$ForecastDayApiModelImplCopyWith(_$ForecastDayApiModelImpl value,
-          $Res Function(_$ForecastDayApiModelImpl) then) =
-      __$$ForecastDayApiModelImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call(
-      {DateTime date,
-      DayApiModel day,
-      int? dateEpoch,
-      AstroApiModel? astro,
-      List<HourApiModel>? hour});
-
-  @override
-  $DayApiModelCopyWith<$Res> get day;
-  @override
-  $AstroApiModelCopyWith<$Res>? get astro;
-}
-
-/// @nodoc
-class __$$ForecastDayApiModelImplCopyWithImpl<$Res>
-    extends _$ForecastDayApiModelCopyWithImpl<$Res, _$ForecastDayApiModelImpl>
-    implements _$$ForecastDayApiModelImplCopyWith<$Res> {
-  __$$ForecastDayApiModelImplCopyWithImpl(_$ForecastDayApiModelImpl _value,
-      $Res Function(_$ForecastDayApiModelImpl) _then)
-      : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? date = null,
-    Object? day = null,
-    Object? dateEpoch = freezed,
-    Object? astro = freezed,
-    Object? hour = freezed,
-  }) {
-    return _then(_$ForecastDayApiModelImpl(
-      date: null == date
-          ? _value.date
-          : date // ignore: cast_nullable_to_non_nullable
-              as DateTime,
-      day: null == day
-          ? _value.day
-          : day // ignore: cast_nullable_to_non_nullable
-              as DayApiModel,
-      dateEpoch: freezed == dateEpoch
-          ? _value.dateEpoch
-          : dateEpoch // ignore: cast_nullable_to_non_nullable
-              as int?,
-      astro: freezed == astro
-          ? _value.astro
-          : astro // ignore: cast_nullable_to_non_nullable
-              as AstroApiModel?,
-      hour: freezed == hour
-          ? _value._hour
+          ? _self.hour
           : hour // ignore: cast_nullable_to_non_nullable
               as List<HourApiModel>?,
     ));
+  }
+
+  /// Create a copy of ForecastDayApiModel
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @pragma('vm:prefer-inline')
+  $DayApiModelCopyWith<$Res> get day {
+    return $DayApiModelCopyWith<$Res>(_self.day, (value) {
+      return _then(_self.copyWith(day: value));
+    });
+  }
+
+  /// Create a copy of ForecastDayApiModel
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @pragma('vm:prefer-inline')
+  $AstroApiModelCopyWith<$Res>? get astro {
+    if (_self.astro == null) {
+      return null;
+    }
+
+    return $AstroApiModelCopyWith<$Res>(_self.astro!, (value) {
+      return _then(_self.copyWith(astro: value));
+    });
+  }
+}
+
+/// Adds pattern-matching-related methods to [ForecastDayApiModel].
+extension ForecastDayApiModelPatterns on ForecastDayApiModel {
+  /// A variant of `map` that fallback to returning `orElse`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(_ForecastDayApiModel value)? $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _ForecastDayApiModel() when $default != null:
+        return $default(_that);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// Callbacks receives the raw object, upcasted.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case final Subclass2 value:
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(_ForecastDayApiModel value) $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _ForecastDayApiModel():
+        return $default(_that);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `map` that fallback to returning `null`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(_ForecastDayApiModel value)? $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _ForecastDayApiModel() when $default != null:
+        return $default(_that);
+      case _:
+        return null;
+    }
+  }
+
+  /// A variant of `when` that fallback to an `orElse` callback.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(DateTime date, DayApiModel day, int? dateEpoch,
+            AstroApiModel? astro, List<HourApiModel>? hour)?
+        $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _ForecastDayApiModel() when $default != null:
+        return $default(
+            _that.date, _that.day, _that.dateEpoch, _that.astro, _that.hour);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// As opposed to `map`, this offers destructuring.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case Subclass2(:final field2):
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(DateTime date, DayApiModel day, int? dateEpoch,
+            AstroApiModel? astro, List<HourApiModel>? hour)
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _ForecastDayApiModel():
+        return $default(
+            _that.date, _that.day, _that.dateEpoch, _that.astro, _that.hour);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `when` that fallback to returning `null`
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(DateTime date, DayApiModel day, int? dateEpoch,
+            AstroApiModel? astro, List<HourApiModel>? hour)?
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _ForecastDayApiModel() when $default != null:
+        return $default(
+            _that.date, _that.day, _that.dateEpoch, _that.astro, _that.hour);
+      case _:
+        return null;
+    }
   }
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$ForecastDayApiModelImpl implements _ForecastDayApiModel {
-  const _$ForecastDayApiModelImpl(
+class _ForecastDayApiModel implements ForecastDayApiModel {
+  const _ForecastDayApiModel(
       {required this.date,
       required this.day,
       this.dateEpoch,
       this.astro,
       final List<HourApiModel>? hour})
       : _hour = hour;
-
-  factory _$ForecastDayApiModelImpl.fromJson(Map<String, dynamic> json) =>
-      _$$ForecastDayApiModelImplFromJson(json);
+  factory _ForecastDayApiModel.fromJson(Map<String, dynamic> json) =>
+      _$ForecastDayApiModelFromJson(json);
 
   @override
   final DateTime date;
@@ -208,16 +337,27 @@ class _$ForecastDayApiModelImpl implements _ForecastDayApiModel {
     return EqualUnmodifiableListView(value);
   }
 
+  /// Create a copy of ForecastDayApiModel
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  String toString() {
-    return 'ForecastDayApiModel(date: $date, day: $day, dateEpoch: $dateEpoch, astro: $astro, hour: $hour)';
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
+  _$ForecastDayApiModelCopyWith<_ForecastDayApiModel> get copyWith =>
+      __$ForecastDayApiModelCopyWithImpl<_ForecastDayApiModel>(
+          this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$ForecastDayApiModelToJson(
+      this,
+    );
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$ForecastDayApiModelImpl &&
+            other is _ForecastDayApiModel &&
             (identical(other.date, date) || other.date == date) &&
             (identical(other.day, day) || other.day == day) &&
             (identical(other.dateEpoch, dateEpoch) ||
@@ -226,49 +366,104 @@ class _$ForecastDayApiModelImpl implements _ForecastDayApiModel {
             const DeepCollectionEquality().equals(other._hour, _hour));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, date, day, dateEpoch, astro,
       const DeepCollectionEquality().hash(_hour));
 
-  @JsonKey(ignore: true)
   @override
-  @pragma('vm:prefer-inline')
-  _$$ForecastDayApiModelImplCopyWith<_$ForecastDayApiModelImpl> get copyWith =>
-      __$$ForecastDayApiModelImplCopyWithImpl<_$ForecastDayApiModelImpl>(
-          this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$ForecastDayApiModelImplToJson(
-      this,
-    );
+  String toString() {
+    return 'ForecastDayApiModel(date: $date, day: $day, dateEpoch: $dateEpoch, astro: $astro, hour: $hour)';
   }
 }
 
-abstract class _ForecastDayApiModel implements ForecastDayApiModel {
-  const factory _ForecastDayApiModel(
-      {required final DateTime date,
-      required final DayApiModel day,
-      final int? dateEpoch,
-      final AstroApiModel? astro,
-      final List<HourApiModel>? hour}) = _$ForecastDayApiModelImpl;
+/// @nodoc
+abstract mixin class _$ForecastDayApiModelCopyWith<$Res>
+    implements $ForecastDayApiModelCopyWith<$Res> {
+  factory _$ForecastDayApiModelCopyWith(_ForecastDayApiModel value,
+          $Res Function(_ForecastDayApiModel) _then) =
+      __$ForecastDayApiModelCopyWithImpl;
+  @override
+  @useResult
+  $Res call(
+      {DateTime date,
+      DayApiModel day,
+      int? dateEpoch,
+      AstroApiModel? astro,
+      List<HourApiModel>? hour});
 
-  factory _ForecastDayApiModel.fromJson(Map<String, dynamic> json) =
-      _$ForecastDayApiModelImpl.fromJson;
-
   @override
-  DateTime get date;
+  $DayApiModelCopyWith<$Res> get day;
   @override
-  DayApiModel get day;
-  @override
-  int? get dateEpoch;
-  @override
-  AstroApiModel? get astro;
-  @override
-  List<HourApiModel>? get hour;
-  @override
-  @JsonKey(ignore: true)
-  _$$ForecastDayApiModelImplCopyWith<_$ForecastDayApiModelImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+  $AstroApiModelCopyWith<$Res>? get astro;
 }
+
+/// @nodoc
+class __$ForecastDayApiModelCopyWithImpl<$Res>
+    implements _$ForecastDayApiModelCopyWith<$Res> {
+  __$ForecastDayApiModelCopyWithImpl(this._self, this._then);
+
+  final _ForecastDayApiModel _self;
+  final $Res Function(_ForecastDayApiModel) _then;
+
+  /// Create a copy of ForecastDayApiModel
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @pragma('vm:prefer-inline')
+  $Res call({
+    Object? date = null,
+    Object? day = null,
+    Object? dateEpoch = freezed,
+    Object? astro = freezed,
+    Object? hour = freezed,
+  }) {
+    return _then(_ForecastDayApiModel(
+      date: null == date
+          ? _self.date
+          : date // ignore: cast_nullable_to_non_nullable
+              as DateTime,
+      day: null == day
+          ? _self.day
+          : day // ignore: cast_nullable_to_non_nullable
+              as DayApiModel,
+      dateEpoch: freezed == dateEpoch
+          ? _self.dateEpoch
+          : dateEpoch // ignore: cast_nullable_to_non_nullable
+              as int?,
+      astro: freezed == astro
+          ? _self.astro
+          : astro // ignore: cast_nullable_to_non_nullable
+              as AstroApiModel?,
+      hour: freezed == hour
+          ? _self._hour
+          : hour // ignore: cast_nullable_to_non_nullable
+              as List<HourApiModel>?,
+    ));
+  }
+
+  /// Create a copy of ForecastDayApiModel
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @pragma('vm:prefer-inline')
+  $DayApiModelCopyWith<$Res> get day {
+    return $DayApiModelCopyWith<$Res>(_self.day, (value) {
+      return _then(_self.copyWith(day: value));
+    });
+  }
+
+  /// Create a copy of ForecastDayApiModel
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @pragma('vm:prefer-inline')
+  $AstroApiModelCopyWith<$Res>? get astro {
+    if (_self.astro == null) {
+      return null;
+    }
+
+    return $AstroApiModelCopyWith<$Res>(_self.astro!, (value) {
+      return _then(_self.copyWith(astro: value));
+    });
+  }
+}
+
+// dart format on

@@ -6,13 +6,13 @@ part of 'forecast_weather.api.model.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$ForecastWeatherApiModelImpl _$$ForecastWeatherApiModelImplFromJson(
+_ForecastWeatherApiModel _$ForecastWeatherApiModelFromJson(
         Map<String, dynamic> json) =>
     $checkedCreate(
-      r'_$ForecastWeatherApiModelImpl',
+      '_ForecastWeatherApiModel',
       json,
       ($checkedConvert) {
-        final val = _$ForecastWeatherApiModelImpl(
+        final val = _ForecastWeatherApiModel(
           current: $checkedConvert(
               'current',
               (v) =>
@@ -30,8 +30,8 @@ _$ForecastWeatherApiModelImpl _$$ForecastWeatherApiModelImplFromJson(
       },
     );
 
-Map<String, dynamic> _$$ForecastWeatherApiModelImplToJson(
-        _$ForecastWeatherApiModelImpl instance) =>
+Map<String, dynamic> _$ForecastWeatherApiModelToJson(
+        _ForecastWeatherApiModel instance) =>
     <String, dynamic>{
       'current': instance.current.toJson(),
       'forecast': instance.forecast.toJson(),

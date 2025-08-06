@@ -1,5 +1,5 @@
-// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// coverage:ignore-file
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
@@ -9,89 +9,230 @@ part of 'locations.model.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// dart format off
 T _$identity<T>(T value) => value;
-
-final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
 mixin _$Locations {
-  List<CurrentLocation> get places => throw _privateConstructorUsedError;
+  List<CurrentLocation> get places;
 
-  @JsonKey(ignore: true)
-  $LocationsCopyWith<Locations> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class $LocationsCopyWith<$Res> {
-  factory $LocationsCopyWith(Locations value, $Res Function(Locations) then) =
-      _$LocationsCopyWithImpl<$Res, Locations>;
-  @useResult
-  $Res call({List<CurrentLocation> places});
-}
-
-/// @nodoc
-class _$LocationsCopyWithImpl<$Res, $Val extends Locations>
-    implements $LocationsCopyWith<$Res> {
-  _$LocationsCopyWithImpl(this._value, this._then);
-
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
-
+  /// Create a copy of Locations
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @pragma('vm:prefer-inline')
+  $LocationsCopyWith<Locations> get copyWith =>
+      _$LocationsCopyWithImpl<Locations>(this as Locations, _$identity);
+
   @override
-  $Res call({
-    Object? places = null,
-  }) {
-    return _then(_value.copyWith(
-      places: null == places
-          ? _value.places
-          : places // ignore: cast_nullable_to_non_nullable
-              as List<CurrentLocation>,
-    ) as $Val);
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is Locations &&
+            const DeepCollectionEquality().equals(other.places, places));
+  }
+
+  @override
+  int get hashCode =>
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(places));
+
+  @override
+  String toString() {
+    return 'Locations(places: $places)';
   }
 }
 
 /// @nodoc
-abstract class _$$LocationsImplCopyWith<$Res>
-    implements $LocationsCopyWith<$Res> {
-  factory _$$LocationsImplCopyWith(
-          _$LocationsImpl value, $Res Function(_$LocationsImpl) then) =
-      __$$LocationsImplCopyWithImpl<$Res>;
-  @override
+abstract mixin class $LocationsCopyWith<$Res> {
+  factory $LocationsCopyWith(Locations value, $Res Function(Locations) _then) =
+      _$LocationsCopyWithImpl;
   @useResult
   $Res call({List<CurrentLocation> places});
 }
 
 /// @nodoc
-class __$$LocationsImplCopyWithImpl<$Res>
-    extends _$LocationsCopyWithImpl<$Res, _$LocationsImpl>
-    implements _$$LocationsImplCopyWith<$Res> {
-  __$$LocationsImplCopyWithImpl(
-      _$LocationsImpl _value, $Res Function(_$LocationsImpl) _then)
-      : super(_value, _then);
+class _$LocationsCopyWithImpl<$Res> implements $LocationsCopyWith<$Res> {
+  _$LocationsCopyWithImpl(this._self, this._then);
 
+  final Locations _self;
+  final $Res Function(Locations) _then;
+
+  /// Create a copy of Locations
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? places = null,
   }) {
-    return _then(_$LocationsImpl(
+    return _then(_self.copyWith(
       places: null == places
-          ? _value._places
+          ? _self.places
           : places // ignore: cast_nullable_to_non_nullable
               as List<CurrentLocation>,
     ));
   }
 }
 
+/// Adds pattern-matching-related methods to [Locations].
+extension LocationsPatterns on Locations {
+  /// A variant of `map` that fallback to returning `orElse`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(_Locations value)? $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _Locations() when $default != null:
+        return $default(_that);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// Callbacks receives the raw object, upcasted.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case final Subclass2 value:
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(_Locations value) $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _Locations():
+        return $default(_that);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `map` that fallback to returning `null`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(_Locations value)? $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _Locations() when $default != null:
+        return $default(_that);
+      case _:
+        return null;
+    }
+  }
+
+  /// A variant of `when` that fallback to an `orElse` callback.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(List<CurrentLocation> places)? $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _Locations() when $default != null:
+        return $default(_that.places);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// As opposed to `map`, this offers destructuring.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case Subclass2(:final field2):
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(List<CurrentLocation> places) $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _Locations():
+        return $default(_that.places);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `when` that fallback to returning `null`
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(List<CurrentLocation> places)? $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _Locations() when $default != null:
+        return $default(_that.places);
+      case _:
+        return null;
+    }
+  }
+}
+
 /// @nodoc
 
-class _$LocationsImpl implements _Locations {
-  const _$LocationsImpl({required final List<CurrentLocation> places})
+class _Locations implements Locations {
+  const _Locations({required final List<CurrentLocation> places})
       : _places = places;
 
   final List<CurrentLocation> _places;
@@ -102,16 +243,19 @@ class _$LocationsImpl implements _Locations {
     return EqualUnmodifiableListView(_places);
   }
 
+  /// Create a copy of Locations
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  String toString() {
-    return 'Locations(places: $places)';
-  }
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
+  _$LocationsCopyWith<_Locations> get copyWith =>
+      __$LocationsCopyWithImpl<_Locations>(this, _$identity);
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$LocationsImpl &&
+            other is _Locations &&
             const DeepCollectionEquality().equals(other._places, _places));
   }
 
@@ -119,21 +263,44 @@ class _$LocationsImpl implements _Locations {
   int get hashCode =>
       Object.hash(runtimeType, const DeepCollectionEquality().hash(_places));
 
-  @JsonKey(ignore: true)
+  @override
+  String toString() {
+    return 'Locations(places: $places)';
+  }
+}
+
+/// @nodoc
+abstract mixin class _$LocationsCopyWith<$Res>
+    implements $LocationsCopyWith<$Res> {
+  factory _$LocationsCopyWith(
+          _Locations value, $Res Function(_Locations) _then) =
+      __$LocationsCopyWithImpl;
+  @override
+  @useResult
+  $Res call({List<CurrentLocation> places});
+}
+
+/// @nodoc
+class __$LocationsCopyWithImpl<$Res> implements _$LocationsCopyWith<$Res> {
+  __$LocationsCopyWithImpl(this._self, this._then);
+
+  final _Locations _self;
+  final $Res Function(_Locations) _then;
+
+  /// Create a copy of Locations
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
-  _$$LocationsImplCopyWith<_$LocationsImpl> get copyWith =>
-      __$$LocationsImplCopyWithImpl<_$LocationsImpl>(this, _$identity);
+  $Res call({
+    Object? places = null,
+  }) {
+    return _then(_Locations(
+      places: null == places
+          ? _self._places
+          : places // ignore: cast_nullable_to_non_nullable
+              as List<CurrentLocation>,
+    ));
+  }
 }
 
-abstract class _Locations implements Locations {
-  const factory _Locations({required final List<CurrentLocation> places}) =
-      _$LocationsImpl;
-
-  @override
-  List<CurrentLocation> get places;
-  @override
-  @JsonKey(ignore: true)
-  _$$LocationsImplCopyWith<_$LocationsImpl> get copyWith =>
-      throw _privateConstructorUsedError;
-}
+// dart format on

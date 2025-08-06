@@ -6,7 +6,7 @@ part 'location.model.freezed.dart';
 part 'location.model.g.dart';
 
 @freezed
-class LocationApiModel with _$LocationApiModel {
+abstract class LocationApiModel with _$LocationApiModel {
   const factory LocationApiModel({
     required String name,
     required String country,

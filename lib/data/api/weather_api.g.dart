@@ -6,13 +6,10 @@ part of 'weather_api.dart';
 // RetrofitGenerator
 // **************************************************************************
 
-// ignore_for_file: unnecessary_brace_in_string_interps,no_leading_underscores_for_local_identifiers
+// ignore_for_file: unnecessary_brace_in_string_interps,no_leading_underscores_for_local_identifiers,unused_element,unnecessary_string_interpolations,unused_element_parameter
 
 class _WeatherApi implements WeatherApi {
-  _WeatherApi(
-    this._dio, {
-    this.baseUrl,
-  }) {
+  _WeatherApi(this._dio, {this.baseUrl, this.errorLogger}) {
     baseUrl ??= 'https://api.weatherapi.com/v1';
   }
 
@@ -20,37 +17,33 @@ class _WeatherApi implements WeatherApi {
 
   String? baseUrl;
 
+  final ParseErrorLogger? errorLogger;
+
   @override
-  Future<AstronomyApiModel> getAstronomy(
-    String q,
-    String dt,
-  ) async {
+  Future<AstronomyApiModel> getAstronomy(String q, String dt) async {
     final _extra = <String, dynamic>{};
-    final queryParameters = <String, dynamic>{
-      r'q': q,
-      r'dt': dt,
-    };
+    final queryParameters = <String, dynamic>{r'q': q, r'dt': dt};
     final _headers = <String, dynamic>{};
     const Map<String, dynamic>? _data = null;
-    final _result = await _dio
-        .fetch<Map<String, dynamic>>(_setStreamType<AstronomyApiModel>(Options(
-      method: 'GET',
-      headers: _headers,
-      extra: _extra,
-    )
-            .compose(
-              _dio.options,
-              '/astronomy.json',
-              queryParameters: queryParameters,
-              data: _data,
-            )
-            .copyWith(
-                baseUrl: _combineBaseUrls(
-              _dio.options.baseUrl,
-              baseUrl,
-            ))));
-    final value = AstronomyApiModel.fromJson(_result.data!);
-    return value;
+    final _options = _setStreamType<AstronomyApiModel>(
+      Options(method: 'GET', headers: _headers, extra: _extra)
+          .compose(
+            _dio.options,
+            '/astronomy.json',
+            queryParameters: queryParameters,
+            data: _data,
+          )
+          .copyWith(baseUrl: _combineBaseUrls(_dio.options.baseUrl, baseUrl)),
+    );
+    final _result = await _dio.fetch<Map<String, dynamic>>(_options);
+    late AstronomyApiModel _value;
+    try {
+      _value = AstronomyApiModel.fromJson(_result.data!);
+    } on Object catch (e, s) {
+      errorLogger?.logError(e, s, _options);
+      rethrow;
+    }
+    return _value;
   }
 
   @override
@@ -59,58 +52,52 @@ class _WeatherApi implements WeatherApi {
     final queryParameters = <String, dynamic>{r'q': q};
     final _headers = <String, dynamic>{};
     const Map<String, dynamic>? _data = null;
-    final _result = await _dio.fetch<Map<String, dynamic>>(
-        _setStreamType<CurrentWeatherApiModel>(Options(
-      method: 'GET',
-      headers: _headers,
-      extra: _extra,
-    )
-            .compose(
-              _dio.options,
-              '/current.json',
-              queryParameters: queryParameters,
-              data: _data,
-            )
-            .copyWith(
-                baseUrl: _combineBaseUrls(
-              _dio.options.baseUrl,
-              baseUrl,
-            ))));
-    final value = CurrentWeatherApiModel.fromJson(_result.data!);
-    return value;
+    final _options = _setStreamType<CurrentWeatherApiModel>(
+      Options(method: 'GET', headers: _headers, extra: _extra)
+          .compose(
+            _dio.options,
+            '/current.json',
+            queryParameters: queryParameters,
+            data: _data,
+          )
+          .copyWith(baseUrl: _combineBaseUrls(_dio.options.baseUrl, baseUrl)),
+    );
+    final _result = await _dio.fetch<Map<String, dynamic>>(_options);
+    late CurrentWeatherApiModel _value;
+    try {
+      _value = CurrentWeatherApiModel.fromJson(_result.data!);
+    } on Object catch (e, s) {
+      errorLogger?.logError(e, s, _options);
+      rethrow;
+    }
+    return _value;
   }
 
   @override
-  Future<ForecastWeatherApiModel> getForecastWeather(
-    String q,
-    int days,
-  ) async {
+  Future<ForecastWeatherApiModel> getForecastWeather(String q, int days) async {
     final _extra = <String, dynamic>{};
-    final queryParameters = <String, dynamic>{
-      r'q': q,
-      r'days': days,
-    };
+    final queryParameters = <String, dynamic>{r'q': q, r'days': days};
     final _headers = <String, dynamic>{};
     const Map<String, dynamic>? _data = null;
-    final _result = await _dio.fetch<Map<String, dynamic>>(
-        _setStreamType<ForecastWeatherApiModel>(Options(
-      method: 'GET',
-      headers: _headers,
-      extra: _extra,
-    )
-            .compose(
-              _dio.options,
-              '/forecast.json',
-              queryParameters: queryParameters,
-              data: _data,
-            )
-            .copyWith(
-                baseUrl: _combineBaseUrls(
-              _dio.options.baseUrl,
-              baseUrl,
-            ))));
-    final value = ForecastWeatherApiModel.fromJson(_result.data!);
-    return value;
+    final _options = _setStreamType<ForecastWeatherApiModel>(
+      Options(method: 'GET', headers: _headers, extra: _extra)
+          .compose(
+            _dio.options,
+            '/forecast.json',
+            queryParameters: queryParameters,
+            data: _data,
+          )
+          .copyWith(baseUrl: _combineBaseUrls(_dio.options.baseUrl, baseUrl)),
+    );
+    final _result = await _dio.fetch<Map<String, dynamic>>(_options);
+    late ForecastWeatherApiModel _value;
+    try {
+      _value = ForecastWeatherApiModel.fromJson(_result.data!);
+    } on Object catch (e, s) {
+      errorLogger?.logError(e, s, _options);
+      rethrow;
+    }
+    return _value;
   }
 
   @override
@@ -119,28 +106,29 @@ class _WeatherApi implements WeatherApi {
     final queryParameters = <String, dynamic>{r'q': q};
     final _headers = <String, dynamic>{};
     const Map<String, dynamic>? _data = null;
-    final _result = await _dio
-        .fetch<List<dynamic>>(_setStreamType<List<LocationApiModel>>(Options(
-      method: 'GET',
-      headers: _headers,
-      extra: _extra,
-    )
-            .compose(
-              _dio.options,
-              '/search.json',
-              queryParameters: queryParameters,
-              data: _data,
-            )
-            .copyWith(
-                baseUrl: _combineBaseUrls(
-              _dio.options.baseUrl,
-              baseUrl,
-            ))));
-    var value = _result.data!
-        .map(
-            (dynamic i) => LocationApiModel.fromJson(i as Map<String, dynamic>))
-        .toList();
-    return value;
+    final _options = _setStreamType<List<LocationApiModel>>(
+      Options(method: 'GET', headers: _headers, extra: _extra)
+          .compose(
+            _dio.options,
+            '/search.json',
+            queryParameters: queryParameters,
+            data: _data,
+          )
+          .copyWith(baseUrl: _combineBaseUrls(_dio.options.baseUrl, baseUrl)),
+    );
+    final _result = await _dio.fetch<List<dynamic>>(_options);
+    late List<LocationApiModel> _value;
+    try {
+      _value = _result.data!
+          .map(
+            (dynamic i) => LocationApiModel.fromJson(i as Map<String, dynamic>),
+          )
+          .toList();
+    } on Object catch (e, s) {
+      errorLogger?.logError(e, s, _options);
+      rethrow;
+    }
+    return _value;
   }
 
   RequestOptions _setStreamType<T>(RequestOptions requestOptions) {
@@ -156,10 +144,7 @@ class _WeatherApi implements WeatherApi {
     return requestOptions;
   }
 
-  String _combineBaseUrls(
-    String dioBaseUrl,
-    String? baseUrl,
-  ) {
+  String _combineBaseUrls(String dioBaseUrl, String? baseUrl) {
     if (baseUrl == null || baseUrl.trim().isEmpty) {
       return dioBaseUrl;
     }
@@ -191,6 +176,8 @@ final weatherApiProvider = AutoDisposeProvider<WeatherApi>.internal(
   allTransitiveDependencies: null,
 );
 
+@Deprecated('Will be removed in 3.0. Use Ref instead')
+// ignore: unused_element
 typedef WeatherApiRef = AutoDisposeProviderRef<WeatherApi>;
 // ignore_for_file: type=lint
-// ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member
+// ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member, deprecated_member_use_from_same_package

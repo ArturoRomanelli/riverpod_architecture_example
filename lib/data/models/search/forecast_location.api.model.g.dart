@@ -6,20 +6,20 @@ part of 'forecast_location.api.model.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$ForecastLocationApiModelImpl _$$ForecastLocationApiModelImplFromJson(
+_ForecastLocationApiModel _$ForecastLocationApiModelFromJson(
         Map<String, dynamic> json) =>
     $checkedCreate(
-      r'_$ForecastLocationApiModelImpl',
+      '_ForecastLocationApiModel',
       json,
       ($checkedConvert) {
-        final val = _$ForecastLocationApiModelImpl(
+        final val = _ForecastLocationApiModel(
           $checkedConvert('name', (v) => v as String?),
           $checkedConvert('region', (v) => v as String?),
           $checkedConvert('country', (v) => v as String?),
           $checkedConvert('lat', (v) => (v as num?)?.toDouble()),
           $checkedConvert('lon', (v) => (v as num?)?.toDouble()),
           $checkedConvert('tz_id', (v) => v as String?),
-          $checkedConvert('localtime_epoch', (v) => v as int?),
+          $checkedConvert('localtime_epoch', (v) => (v as num?)?.toInt()),
           $checkedConvert('localtime', (v) => v as String?),
         );
         return val;
@@ -27,8 +27,8 @@ _$ForecastLocationApiModelImpl _$$ForecastLocationApiModelImplFromJson(
       fieldKeyMap: const {'tzId': 'tz_id', 'localtimeEpoch': 'localtime_epoch'},
     );
 
-Map<String, dynamic> _$$ForecastLocationApiModelImplToJson(
-        _$ForecastLocationApiModelImpl instance) =>
+Map<String, dynamic> _$ForecastLocationApiModelToJson(
+        _ForecastLocationApiModel instance) =>
     <String, dynamic>{
       'name': instance.name,
       'region': instance.region,

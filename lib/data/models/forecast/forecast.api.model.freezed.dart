@@ -1,5 +1,5 @@
-// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// coverage:ignore-file
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
@@ -9,150 +9,313 @@ part of 'forecast.api.model.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// dart format off
 T _$identity<T>(T value) => value;
-
-final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-ForecastApiModel _$ForecastApiModelFromJson(Map<String, dynamic> json) {
-  return _ForecastApiModel.fromJson(json);
-}
 
 /// @nodoc
 mixin _$ForecastApiModel {
-  Iterable<ForecastDayApiModel> get forecastday =>
-      throw _privateConstructorUsedError;
+  Iterable<ForecastDayApiModel> get forecastday;
 
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
-  $ForecastApiModelCopyWith<ForecastApiModel> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class $ForecastApiModelCopyWith<$Res> {
-  factory $ForecastApiModelCopyWith(
-          ForecastApiModel value, $Res Function(ForecastApiModel) then) =
-      _$ForecastApiModelCopyWithImpl<$Res, ForecastApiModel>;
-  @useResult
-  $Res call({Iterable<ForecastDayApiModel> forecastday});
-}
-
-/// @nodoc
-class _$ForecastApiModelCopyWithImpl<$Res, $Val extends ForecastApiModel>
-    implements $ForecastApiModelCopyWith<$Res> {
-  _$ForecastApiModelCopyWithImpl(this._value, this._then);
-
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
-
+  /// Create a copy of ForecastApiModel
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @pragma('vm:prefer-inline')
+  $ForecastApiModelCopyWith<ForecastApiModel> get copyWith =>
+      _$ForecastApiModelCopyWithImpl<ForecastApiModel>(
+          this as ForecastApiModel, _$identity);
+
+  /// Serializes this ForecastApiModel to a JSON map.
+  Map<String, dynamic> toJson();
+
   @override
-  $Res call({
-    Object? forecastday = null,
-  }) {
-    return _then(_value.copyWith(
-      forecastday: null == forecastday
-          ? _value.forecastday
-          : forecastday // ignore: cast_nullable_to_non_nullable
-              as Iterable<ForecastDayApiModel>,
-    ) as $Val);
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is ForecastApiModel &&
+            const DeepCollectionEquality()
+                .equals(other.forecastday, forecastday));
+  }
+
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  int get hashCode => Object.hash(
+      runtimeType, const DeepCollectionEquality().hash(forecastday));
+
+  @override
+  String toString() {
+    return 'ForecastApiModel(forecastday: $forecastday)';
   }
 }
 
 /// @nodoc
-abstract class _$$ForecastApiModelImplCopyWith<$Res>
-    implements $ForecastApiModelCopyWith<$Res> {
-  factory _$$ForecastApiModelImplCopyWith(_$ForecastApiModelImpl value,
-          $Res Function(_$ForecastApiModelImpl) then) =
-      __$$ForecastApiModelImplCopyWithImpl<$Res>;
-  @override
+abstract mixin class $ForecastApiModelCopyWith<$Res> {
+  factory $ForecastApiModelCopyWith(
+          ForecastApiModel value, $Res Function(ForecastApiModel) _then) =
+      _$ForecastApiModelCopyWithImpl;
   @useResult
   $Res call({Iterable<ForecastDayApiModel> forecastday});
 }
 
 /// @nodoc
-class __$$ForecastApiModelImplCopyWithImpl<$Res>
-    extends _$ForecastApiModelCopyWithImpl<$Res, _$ForecastApiModelImpl>
-    implements _$$ForecastApiModelImplCopyWith<$Res> {
-  __$$ForecastApiModelImplCopyWithImpl(_$ForecastApiModelImpl _value,
-      $Res Function(_$ForecastApiModelImpl) _then)
-      : super(_value, _then);
+class _$ForecastApiModelCopyWithImpl<$Res>
+    implements $ForecastApiModelCopyWith<$Res> {
+  _$ForecastApiModelCopyWithImpl(this._self, this._then);
 
+  final ForecastApiModel _self;
+  final $Res Function(ForecastApiModel) _then;
+
+  /// Create a copy of ForecastApiModel
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? forecastday = null,
   }) {
-    return _then(_$ForecastApiModelImpl(
+    return _then(_self.copyWith(
       forecastday: null == forecastday
-          ? _value.forecastday
+          ? _self.forecastday
           : forecastday // ignore: cast_nullable_to_non_nullable
               as Iterable<ForecastDayApiModel>,
     ));
   }
 }
 
+/// Adds pattern-matching-related methods to [ForecastApiModel].
+extension ForecastApiModelPatterns on ForecastApiModel {
+  /// A variant of `map` that fallback to returning `orElse`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(_ForecastApiModel value)? $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _ForecastApiModel() when $default != null:
+        return $default(_that);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// Callbacks receives the raw object, upcasted.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case final Subclass2 value:
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(_ForecastApiModel value) $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _ForecastApiModel():
+        return $default(_that);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `map` that fallback to returning `null`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(_ForecastApiModel value)? $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _ForecastApiModel() when $default != null:
+        return $default(_that);
+      case _:
+        return null;
+    }
+  }
+
+  /// A variant of `when` that fallback to an `orElse` callback.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(Iterable<ForecastDayApiModel> forecastday)? $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _ForecastApiModel() when $default != null:
+        return $default(_that.forecastday);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// As opposed to `map`, this offers destructuring.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case Subclass2(:final field2):
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(Iterable<ForecastDayApiModel> forecastday) $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _ForecastApiModel():
+        return $default(_that.forecastday);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `when` that fallback to returning `null`
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(Iterable<ForecastDayApiModel> forecastday)? $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _ForecastApiModel() when $default != null:
+        return $default(_that.forecastday);
+      case _:
+        return null;
+    }
+  }
+}
+
 /// @nodoc
 @JsonSerializable()
-class _$ForecastApiModelImpl implements _ForecastApiModel {
-  const _$ForecastApiModelImpl({this.forecastday = const []});
-
-  factory _$ForecastApiModelImpl.fromJson(Map<String, dynamic> json) =>
-      _$$ForecastApiModelImplFromJson(json);
+class _ForecastApiModel implements ForecastApiModel {
+  const _ForecastApiModel({this.forecastday = const []});
+  factory _ForecastApiModel.fromJson(Map<String, dynamic> json) =>
+      _$ForecastApiModelFromJson(json);
 
   @override
   @JsonKey()
   final Iterable<ForecastDayApiModel> forecastday;
 
+  /// Create a copy of ForecastApiModel
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  String toString() {
-    return 'ForecastApiModel(forecastday: $forecastday)';
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
+  _$ForecastApiModelCopyWith<_ForecastApiModel> get copyWith =>
+      __$ForecastApiModelCopyWithImpl<_ForecastApiModel>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$ForecastApiModelToJson(
+      this,
+    );
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$ForecastApiModelImpl &&
+            other is _ForecastApiModel &&
             const DeepCollectionEquality()
                 .equals(other.forecastday, forecastday));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType, const DeepCollectionEquality().hash(forecastday));
 
-  @JsonKey(ignore: true)
   @override
-  @pragma('vm:prefer-inline')
-  _$$ForecastApiModelImplCopyWith<_$ForecastApiModelImpl> get copyWith =>
-      __$$ForecastApiModelImplCopyWithImpl<_$ForecastApiModelImpl>(
-          this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$ForecastApiModelImplToJson(
-      this,
-    );
+  String toString() {
+    return 'ForecastApiModel(forecastday: $forecastday)';
   }
 }
 
-abstract class _ForecastApiModel implements ForecastApiModel {
-  const factory _ForecastApiModel(
-          {final Iterable<ForecastDayApiModel> forecastday}) =
-      _$ForecastApiModelImpl;
-
-  factory _ForecastApiModel.fromJson(Map<String, dynamic> json) =
-      _$ForecastApiModelImpl.fromJson;
-
+/// @nodoc
+abstract mixin class _$ForecastApiModelCopyWith<$Res>
+    implements $ForecastApiModelCopyWith<$Res> {
+  factory _$ForecastApiModelCopyWith(
+          _ForecastApiModel value, $Res Function(_ForecastApiModel) _then) =
+      __$ForecastApiModelCopyWithImpl;
   @override
-  Iterable<ForecastDayApiModel> get forecastday;
-  @override
-  @JsonKey(ignore: true)
-  _$$ForecastApiModelImplCopyWith<_$ForecastApiModelImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+  @useResult
+  $Res call({Iterable<ForecastDayApiModel> forecastday});
 }
+
+/// @nodoc
+class __$ForecastApiModelCopyWithImpl<$Res>
+    implements _$ForecastApiModelCopyWith<$Res> {
+  __$ForecastApiModelCopyWithImpl(this._self, this._then);
+
+  final _ForecastApiModel _self;
+  final $Res Function(_ForecastApiModel) _then;
+
+  /// Create a copy of ForecastApiModel
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @pragma('vm:prefer-inline')
+  $Res call({
+    Object? forecastday = null,
+  }) {
+    return _then(_ForecastApiModel(
+      forecastday: null == forecastday
+          ? _self.forecastday
+          : forecastday // ignore: cast_nullable_to_non_nullable
+              as Iterable<ForecastDayApiModel>,
+    ));
+  }
+}
+
+// dart format on

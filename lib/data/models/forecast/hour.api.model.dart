@@ -7,7 +7,7 @@ part 'hour.api.model.freezed.dart';
 part 'hour.api.model.g.dart';
 
 @freezed
-class HourApiModel with _$HourApiModel {
+abstract class HourApiModel with _$HourApiModel {
   const factory HourApiModel(
     int? timeEpoch,
     String? time,

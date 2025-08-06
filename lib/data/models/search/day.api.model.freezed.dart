@@ -1,5 +1,5 @@
-// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// coverage:ignore-file
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
@@ -9,49 +9,125 @@ part of 'day.api.model.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// dart format off
 T _$identity<T>(T value) => value;
-
-final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-DayApiModel _$DayApiModelFromJson(Map<String, dynamic> json) {
-  return _DayApiModel.fromJson(json);
-}
 
 /// @nodoc
 mixin _$DayApiModel {
-  ConditionApiModel get condition => throw _privateConstructorUsedError;
-  double get avgtempC => throw _privateConstructorUsedError;
-  double? get maxtempC => throw _privateConstructorUsedError;
-  double? get maxtempF => throw _privateConstructorUsedError;
-  double? get mintempC => throw _privateConstructorUsedError;
-  double? get mintempF => throw _privateConstructorUsedError;
-  double? get avgtempF => throw _privateConstructorUsedError;
-  double? get maxwindMph => throw _privateConstructorUsedError;
-  double? get maxwindKph => throw _privateConstructorUsedError;
-  double? get totalprecipMm => throw _privateConstructorUsedError;
-  double? get totalprecipIn => throw _privateConstructorUsedError;
-  double? get totalsnowCm => throw _privateConstructorUsedError;
-  double? get avgvisKm => throw _privateConstructorUsedError;
-  double? get avgvisMiles => throw _privateConstructorUsedError;
-  double? get avghumidity => throw _privateConstructorUsedError;
-  double? get dailyWillItRain => throw _privateConstructorUsedError;
-  double? get dailyChanceOfRain => throw _privateConstructorUsedError;
-  double? get dailyWillItSnow => throw _privateConstructorUsedError;
-  double? get dailyChanceOfSnow => throw _privateConstructorUsedError;
-  double? get uv => throw _privateConstructorUsedError;
+  ConditionApiModel get condition;
+  double get avgtempC;
+  double? get maxtempC;
+  double? get maxtempF;
+  double? get mintempC;
+  double? get mintempF;
+  double? get avgtempF;
+  double? get maxwindMph;
+  double? get maxwindKph;
+  double? get totalprecipMm;
+  double? get totalprecipIn;
+  double? get totalsnowCm;
+  double? get avgvisKm;
+  double? get avgvisMiles;
+  double? get avghumidity;
+  double? get dailyWillItRain;
+  double? get dailyChanceOfRain;
+  double? get dailyWillItSnow;
+  double? get dailyChanceOfSnow;
+  double? get uv;
 
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+  /// Create a copy of DayApiModel
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
   $DayApiModelCopyWith<DayApiModel> get copyWith =>
-      throw _privateConstructorUsedError;
+      _$DayApiModelCopyWithImpl<DayApiModel>(this as DayApiModel, _$identity);
+
+  /// Serializes this DayApiModel to a JSON map.
+  Map<String, dynamic> toJson();
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is DayApiModel &&
+            (identical(other.condition, condition) ||
+                other.condition == condition) &&
+            (identical(other.avgtempC, avgtempC) ||
+                other.avgtempC == avgtempC) &&
+            (identical(other.maxtempC, maxtempC) ||
+                other.maxtempC == maxtempC) &&
+            (identical(other.maxtempF, maxtempF) ||
+                other.maxtempF == maxtempF) &&
+            (identical(other.mintempC, mintempC) ||
+                other.mintempC == mintempC) &&
+            (identical(other.mintempF, mintempF) ||
+                other.mintempF == mintempF) &&
+            (identical(other.avgtempF, avgtempF) ||
+                other.avgtempF == avgtempF) &&
+            (identical(other.maxwindMph, maxwindMph) ||
+                other.maxwindMph == maxwindMph) &&
+            (identical(other.maxwindKph, maxwindKph) ||
+                other.maxwindKph == maxwindKph) &&
+            (identical(other.totalprecipMm, totalprecipMm) ||
+                other.totalprecipMm == totalprecipMm) &&
+            (identical(other.totalprecipIn, totalprecipIn) ||
+                other.totalprecipIn == totalprecipIn) &&
+            (identical(other.totalsnowCm, totalsnowCm) ||
+                other.totalsnowCm == totalsnowCm) &&
+            (identical(other.avgvisKm, avgvisKm) ||
+                other.avgvisKm == avgvisKm) &&
+            (identical(other.avgvisMiles, avgvisMiles) ||
+                other.avgvisMiles == avgvisMiles) &&
+            (identical(other.avghumidity, avghumidity) ||
+                other.avghumidity == avghumidity) &&
+            (identical(other.dailyWillItRain, dailyWillItRain) ||
+                other.dailyWillItRain == dailyWillItRain) &&
+            (identical(other.dailyChanceOfRain, dailyChanceOfRain) ||
+                other.dailyChanceOfRain == dailyChanceOfRain) &&
+            (identical(other.dailyWillItSnow, dailyWillItSnow) ||
+                other.dailyWillItSnow == dailyWillItSnow) &&
+            (identical(other.dailyChanceOfSnow, dailyChanceOfSnow) ||
+                other.dailyChanceOfSnow == dailyChanceOfSnow) &&
+            (identical(other.uv, uv) || other.uv == uv));
+  }
+
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  int get hashCode => Object.hashAll([
+        runtimeType,
+        condition,
+        avgtempC,
+        maxtempC,
+        maxtempF,
+        mintempC,
+        mintempF,
+        avgtempF,
+        maxwindMph,
+        maxwindKph,
+        totalprecipMm,
+        totalprecipIn,
+        totalsnowCm,
+        avgvisKm,
+        avgvisMiles,
+        avghumidity,
+        dailyWillItRain,
+        dailyChanceOfRain,
+        dailyWillItSnow,
+        dailyChanceOfSnow,
+        uv
+      ]);
+
+  @override
+  String toString() {
+    return 'DayApiModel(condition: $condition, avgtempC: $avgtempC, maxtempC: $maxtempC, maxtempF: $maxtempF, mintempC: $mintempC, mintempF: $mintempF, avgtempF: $avgtempF, maxwindMph: $maxwindMph, maxwindKph: $maxwindKph, totalprecipMm: $totalprecipMm, totalprecipIn: $totalprecipIn, totalsnowCm: $totalsnowCm, avgvisKm: $avgvisKm, avgvisMiles: $avgvisMiles, avghumidity: $avghumidity, dailyWillItRain: $dailyWillItRain, dailyChanceOfRain: $dailyChanceOfRain, dailyWillItSnow: $dailyWillItSnow, dailyChanceOfSnow: $dailyChanceOfSnow, uv: $uv)';
+  }
 }
 
 /// @nodoc
-abstract class $DayApiModelCopyWith<$Res> {
+abstract mixin class $DayApiModelCopyWith<$Res> {
   factory $DayApiModelCopyWith(
-          DayApiModel value, $Res Function(DayApiModel) then) =
-      _$DayApiModelCopyWithImpl<$Res, DayApiModel>;
+          DayApiModel value, $Res Function(DayApiModel) _then) =
+      _$DayApiModelCopyWithImpl;
   @useResult
   $Res call(
       {ConditionApiModel condition,
@@ -79,15 +155,14 @@ abstract class $DayApiModelCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$DayApiModelCopyWithImpl<$Res, $Val extends DayApiModel>
-    implements $DayApiModelCopyWith<$Res> {
-  _$DayApiModelCopyWithImpl(this._value, this._then);
+class _$DayApiModelCopyWithImpl<$Res> implements $DayApiModelCopyWith<$Res> {
+  _$DayApiModelCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final DayApiModel _self;
+  final $Res Function(DayApiModel) _then;
 
+  /// Create a copy of DayApiModel
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -112,254 +187,385 @@ class _$DayApiModelCopyWithImpl<$Res, $Val extends DayApiModel>
     Object? dailyChanceOfSnow = freezed,
     Object? uv = freezed,
   }) {
-    return _then(_value.copyWith(
+    return _then(_self.copyWith(
       condition: null == condition
-          ? _value.condition
+          ? _self.condition
           : condition // ignore: cast_nullable_to_non_nullable
               as ConditionApiModel,
       avgtempC: null == avgtempC
-          ? _value.avgtempC
+          ? _self.avgtempC
           : avgtempC // ignore: cast_nullable_to_non_nullable
               as double,
       maxtempC: freezed == maxtempC
-          ? _value.maxtempC
+          ? _self.maxtempC
           : maxtempC // ignore: cast_nullable_to_non_nullable
               as double?,
       maxtempF: freezed == maxtempF
-          ? _value.maxtempF
+          ? _self.maxtempF
           : maxtempF // ignore: cast_nullable_to_non_nullable
               as double?,
       mintempC: freezed == mintempC
-          ? _value.mintempC
+          ? _self.mintempC
           : mintempC // ignore: cast_nullable_to_non_nullable
               as double?,
       mintempF: freezed == mintempF
-          ? _value.mintempF
+          ? _self.mintempF
           : mintempF // ignore: cast_nullable_to_non_nullable
               as double?,
       avgtempF: freezed == avgtempF
-          ? _value.avgtempF
+          ? _self.avgtempF
           : avgtempF // ignore: cast_nullable_to_non_nullable
               as double?,
       maxwindMph: freezed == maxwindMph
-          ? _value.maxwindMph
+          ? _self.maxwindMph
           : maxwindMph // ignore: cast_nullable_to_non_nullable
               as double?,
       maxwindKph: freezed == maxwindKph
-          ? _value.maxwindKph
+          ? _self.maxwindKph
           : maxwindKph // ignore: cast_nullable_to_non_nullable
               as double?,
       totalprecipMm: freezed == totalprecipMm
-          ? _value.totalprecipMm
+          ? _self.totalprecipMm
           : totalprecipMm // ignore: cast_nullable_to_non_nullable
               as double?,
       totalprecipIn: freezed == totalprecipIn
-          ? _value.totalprecipIn
+          ? _self.totalprecipIn
           : totalprecipIn // ignore: cast_nullable_to_non_nullable
               as double?,
       totalsnowCm: freezed == totalsnowCm
-          ? _value.totalsnowCm
+          ? _self.totalsnowCm
           : totalsnowCm // ignore: cast_nullable_to_non_nullable
               as double?,
       avgvisKm: freezed == avgvisKm
-          ? _value.avgvisKm
+          ? _self.avgvisKm
           : avgvisKm // ignore: cast_nullable_to_non_nullable
               as double?,
       avgvisMiles: freezed == avgvisMiles
-          ? _value.avgvisMiles
+          ? _self.avgvisMiles
           : avgvisMiles // ignore: cast_nullable_to_non_nullable
               as double?,
       avghumidity: freezed == avghumidity
-          ? _value.avghumidity
+          ? _self.avghumidity
           : avghumidity // ignore: cast_nullable_to_non_nullable
               as double?,
       dailyWillItRain: freezed == dailyWillItRain
-          ? _value.dailyWillItRain
+          ? _self.dailyWillItRain
           : dailyWillItRain // ignore: cast_nullable_to_non_nullable
               as double?,
       dailyChanceOfRain: freezed == dailyChanceOfRain
-          ? _value.dailyChanceOfRain
+          ? _self.dailyChanceOfRain
           : dailyChanceOfRain // ignore: cast_nullable_to_non_nullable
               as double?,
       dailyWillItSnow: freezed == dailyWillItSnow
-          ? _value.dailyWillItSnow
+          ? _self.dailyWillItSnow
           : dailyWillItSnow // ignore: cast_nullable_to_non_nullable
               as double?,
       dailyChanceOfSnow: freezed == dailyChanceOfSnow
-          ? _value.dailyChanceOfSnow
+          ? _self.dailyChanceOfSnow
           : dailyChanceOfSnow // ignore: cast_nullable_to_non_nullable
               as double?,
       uv: freezed == uv
-          ? _value.uv
+          ? _self.uv
           : uv // ignore: cast_nullable_to_non_nullable
               as double?,
-    ) as $Val);
+    ));
   }
 
+  /// Create a copy of DayApiModel
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ConditionApiModelCopyWith<$Res> get condition {
-    return $ConditionApiModelCopyWith<$Res>(_value.condition, (value) {
-      return _then(_value.copyWith(condition: value) as $Val);
+    return $ConditionApiModelCopyWith<$Res>(_self.condition, (value) {
+      return _then(_self.copyWith(condition: value));
     });
   }
 }
 
-/// @nodoc
-abstract class _$$DayApiModelImplCopyWith<$Res>
-    implements $DayApiModelCopyWith<$Res> {
-  factory _$$DayApiModelImplCopyWith(
-          _$DayApiModelImpl value, $Res Function(_$DayApiModelImpl) then) =
-      __$$DayApiModelImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call(
-      {ConditionApiModel condition,
-      double avgtempC,
-      double? maxtempC,
-      double? maxtempF,
-      double? mintempC,
-      double? mintempF,
-      double? avgtempF,
-      double? maxwindMph,
-      double? maxwindKph,
-      double? totalprecipMm,
-      double? totalprecipIn,
-      double? totalsnowCm,
-      double? avgvisKm,
-      double? avgvisMiles,
-      double? avghumidity,
-      double? dailyWillItRain,
-      double? dailyChanceOfRain,
-      double? dailyWillItSnow,
-      double? dailyChanceOfSnow,
-      double? uv});
+/// Adds pattern-matching-related methods to [DayApiModel].
+extension DayApiModelPatterns on DayApiModel {
+  /// A variant of `map` that fallback to returning `orElse`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
 
-  @override
-  $ConditionApiModelCopyWith<$Res> get condition;
-}
-
-/// @nodoc
-class __$$DayApiModelImplCopyWithImpl<$Res>
-    extends _$DayApiModelCopyWithImpl<$Res, _$DayApiModelImpl>
-    implements _$$DayApiModelImplCopyWith<$Res> {
-  __$$DayApiModelImplCopyWithImpl(
-      _$DayApiModelImpl _value, $Res Function(_$DayApiModelImpl) _then)
-      : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? condition = null,
-    Object? avgtempC = null,
-    Object? maxtempC = freezed,
-    Object? maxtempF = freezed,
-    Object? mintempC = freezed,
-    Object? mintempF = freezed,
-    Object? avgtempF = freezed,
-    Object? maxwindMph = freezed,
-    Object? maxwindKph = freezed,
-    Object? totalprecipMm = freezed,
-    Object? totalprecipIn = freezed,
-    Object? totalsnowCm = freezed,
-    Object? avgvisKm = freezed,
-    Object? avgvisMiles = freezed,
-    Object? avghumidity = freezed,
-    Object? dailyWillItRain = freezed,
-    Object? dailyChanceOfRain = freezed,
-    Object? dailyWillItSnow = freezed,
-    Object? dailyChanceOfSnow = freezed,
-    Object? uv = freezed,
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>(
+    TResult Function(_DayApiModel value)? $default, {
+    required TResult orElse(),
   }) {
-    return _then(_$DayApiModelImpl(
-      condition: null == condition
-          ? _value.condition
-          : condition // ignore: cast_nullable_to_non_nullable
-              as ConditionApiModel,
-      avgtempC: null == avgtempC
-          ? _value.avgtempC
-          : avgtempC // ignore: cast_nullable_to_non_nullable
-              as double,
-      maxtempC: freezed == maxtempC
-          ? _value.maxtempC
-          : maxtempC // ignore: cast_nullable_to_non_nullable
-              as double?,
-      maxtempF: freezed == maxtempF
-          ? _value.maxtempF
-          : maxtempF // ignore: cast_nullable_to_non_nullable
-              as double?,
-      mintempC: freezed == mintempC
-          ? _value.mintempC
-          : mintempC // ignore: cast_nullable_to_non_nullable
-              as double?,
-      mintempF: freezed == mintempF
-          ? _value.mintempF
-          : mintempF // ignore: cast_nullable_to_non_nullable
-              as double?,
-      avgtempF: freezed == avgtempF
-          ? _value.avgtempF
-          : avgtempF // ignore: cast_nullable_to_non_nullable
-              as double?,
-      maxwindMph: freezed == maxwindMph
-          ? _value.maxwindMph
-          : maxwindMph // ignore: cast_nullable_to_non_nullable
-              as double?,
-      maxwindKph: freezed == maxwindKph
-          ? _value.maxwindKph
-          : maxwindKph // ignore: cast_nullable_to_non_nullable
-              as double?,
-      totalprecipMm: freezed == totalprecipMm
-          ? _value.totalprecipMm
-          : totalprecipMm // ignore: cast_nullable_to_non_nullable
-              as double?,
-      totalprecipIn: freezed == totalprecipIn
-          ? _value.totalprecipIn
-          : totalprecipIn // ignore: cast_nullable_to_non_nullable
-              as double?,
-      totalsnowCm: freezed == totalsnowCm
-          ? _value.totalsnowCm
-          : totalsnowCm // ignore: cast_nullable_to_non_nullable
-              as double?,
-      avgvisKm: freezed == avgvisKm
-          ? _value.avgvisKm
-          : avgvisKm // ignore: cast_nullable_to_non_nullable
-              as double?,
-      avgvisMiles: freezed == avgvisMiles
-          ? _value.avgvisMiles
-          : avgvisMiles // ignore: cast_nullable_to_non_nullable
-              as double?,
-      avghumidity: freezed == avghumidity
-          ? _value.avghumidity
-          : avghumidity // ignore: cast_nullable_to_non_nullable
-              as double?,
-      dailyWillItRain: freezed == dailyWillItRain
-          ? _value.dailyWillItRain
-          : dailyWillItRain // ignore: cast_nullable_to_non_nullable
-              as double?,
-      dailyChanceOfRain: freezed == dailyChanceOfRain
-          ? _value.dailyChanceOfRain
-          : dailyChanceOfRain // ignore: cast_nullable_to_non_nullable
-              as double?,
-      dailyWillItSnow: freezed == dailyWillItSnow
-          ? _value.dailyWillItSnow
-          : dailyWillItSnow // ignore: cast_nullable_to_non_nullable
-              as double?,
-      dailyChanceOfSnow: freezed == dailyChanceOfSnow
-          ? _value.dailyChanceOfSnow
-          : dailyChanceOfSnow // ignore: cast_nullable_to_non_nullable
-              as double?,
-      uv: freezed == uv
-          ? _value.uv
-          : uv // ignore: cast_nullable_to_non_nullable
-              as double?,
-    ));
+    final _that = this;
+    switch (_that) {
+      case _DayApiModel() when $default != null:
+        return $default(_that);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// Callbacks receives the raw object, upcasted.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case final Subclass2 value:
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>(
+    TResult Function(_DayApiModel value) $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _DayApiModel():
+        return $default(_that);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `map` that fallback to returning `null`.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case final Subclass value:
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>(
+    TResult? Function(_DayApiModel value)? $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _DayApiModel() when $default != null:
+        return $default(_that);
+      case _:
+        return null;
+    }
+  }
+
+  /// A variant of `when` that fallback to an `orElse` callback.
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return orElse();
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>(
+    TResult Function(
+            ConditionApiModel condition,
+            double avgtempC,
+            double? maxtempC,
+            double? maxtempF,
+            double? mintempC,
+            double? mintempF,
+            double? avgtempF,
+            double? maxwindMph,
+            double? maxwindKph,
+            double? totalprecipMm,
+            double? totalprecipIn,
+            double? totalsnowCm,
+            double? avgvisKm,
+            double? avgvisMiles,
+            double? avghumidity,
+            double? dailyWillItRain,
+            double? dailyChanceOfRain,
+            double? dailyWillItSnow,
+            double? dailyChanceOfSnow,
+            double? uv)?
+        $default, {
+    required TResult orElse(),
+  }) {
+    final _that = this;
+    switch (_that) {
+      case _DayApiModel() when $default != null:
+        return $default(
+            _that.condition,
+            _that.avgtempC,
+            _that.maxtempC,
+            _that.maxtempF,
+            _that.mintempC,
+            _that.mintempF,
+            _that.avgtempF,
+            _that.maxwindMph,
+            _that.maxwindKph,
+            _that.totalprecipMm,
+            _that.totalprecipIn,
+            _that.totalsnowCm,
+            _that.avgvisKm,
+            _that.avgvisMiles,
+            _that.avghumidity,
+            _that.dailyWillItRain,
+            _that.dailyChanceOfRain,
+            _that.dailyWillItSnow,
+            _that.dailyChanceOfSnow,
+            _that.uv);
+      case _:
+        return orElse();
+    }
+  }
+
+  /// A `switch`-like method, using callbacks.
+  ///
+  /// As opposed to `map`, this offers destructuring.
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case Subclass2(:final field2):
+  ///     return ...;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>(
+    TResult Function(
+            ConditionApiModel condition,
+            double avgtempC,
+            double? maxtempC,
+            double? maxtempF,
+            double? mintempC,
+            double? mintempF,
+            double? avgtempF,
+            double? maxwindMph,
+            double? maxwindKph,
+            double? totalprecipMm,
+            double? totalprecipIn,
+            double? totalsnowCm,
+            double? avgvisKm,
+            double? avgvisMiles,
+            double? avghumidity,
+            double? dailyWillItRain,
+            double? dailyChanceOfRain,
+            double? dailyWillItSnow,
+            double? dailyChanceOfSnow,
+            double? uv)
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _DayApiModel():
+        return $default(
+            _that.condition,
+            _that.avgtempC,
+            _that.maxtempC,
+            _that.maxtempF,
+            _that.mintempC,
+            _that.mintempF,
+            _that.avgtempF,
+            _that.maxwindMph,
+            _that.maxwindKph,
+            _that.totalprecipMm,
+            _that.totalprecipIn,
+            _that.totalsnowCm,
+            _that.avgvisKm,
+            _that.avgvisMiles,
+            _that.avghumidity,
+            _that.dailyWillItRain,
+            _that.dailyChanceOfRain,
+            _that.dailyWillItSnow,
+            _that.dailyChanceOfSnow,
+            _that.uv);
+      case _:
+        throw StateError('Unexpected subclass');
+    }
+  }
+
+  /// A variant of `when` that fallback to returning `null`
+  ///
+  /// It is equivalent to doing:
+  /// ```dart
+  /// switch (sealedClass) {
+  ///   case Subclass(:final field):
+  ///     return ...;
+  ///   case _:
+  ///     return null;
+  /// }
+  /// ```
+
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>(
+    TResult? Function(
+            ConditionApiModel condition,
+            double avgtempC,
+            double? maxtempC,
+            double? maxtempF,
+            double? mintempC,
+            double? mintempF,
+            double? avgtempF,
+            double? maxwindMph,
+            double? maxwindKph,
+            double? totalprecipMm,
+            double? totalprecipIn,
+            double? totalsnowCm,
+            double? avgvisKm,
+            double? avgvisMiles,
+            double? avghumidity,
+            double? dailyWillItRain,
+            double? dailyChanceOfRain,
+            double? dailyWillItSnow,
+            double? dailyChanceOfSnow,
+            double? uv)?
+        $default,
+  ) {
+    final _that = this;
+    switch (_that) {
+      case _DayApiModel() when $default != null:
+        return $default(
+            _that.condition,
+            _that.avgtempC,
+            _that.maxtempC,
+            _that.maxtempF,
+            _that.mintempC,
+            _that.mintempF,
+            _that.avgtempF,
+            _that.maxwindMph,
+            _that.maxwindKph,
+            _that.totalprecipMm,
+            _that.totalprecipIn,
+            _that.totalsnowCm,
+            _that.avgvisKm,
+            _that.avgvisMiles,
+            _that.avghumidity,
+            _that.dailyWillItRain,
+            _that.dailyChanceOfRain,
+            _that.dailyWillItSnow,
+            _that.dailyChanceOfSnow,
+            _that.uv);
+      case _:
+        return null;
+    }
   }
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$DayApiModelImpl implements _DayApiModel {
-  const _$DayApiModelImpl(
+class _DayApiModel implements DayApiModel {
+  const _DayApiModel(
       {required this.condition,
       required this.avgtempC,
       this.maxtempC,
@@ -380,9 +586,8 @@ class _$DayApiModelImpl implements _DayApiModel {
       this.dailyWillItSnow,
       this.dailyChanceOfSnow,
       this.uv});
-
-  factory _$DayApiModelImpl.fromJson(Map<String, dynamic> json) =>
-      _$$DayApiModelImplFromJson(json);
+  factory _DayApiModel.fromJson(Map<String, dynamic> json) =>
+      _$DayApiModelFromJson(json);
 
   @override
   final ConditionApiModel condition;
@@ -425,16 +630,26 @@ class _$DayApiModelImpl implements _DayApiModel {
   @override
   final double? uv;
 
+  /// Create a copy of DayApiModel
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  String toString() {
-    return 'DayApiModel(condition: $condition, avgtempC: $avgtempC, maxtempC: $maxtempC, maxtempF: $maxtempF, mintempC: $mintempC, mintempF: $mintempF, avgtempF: $avgtempF, maxwindMph: $maxwindMph, maxwindKph: $maxwindKph, totalprecipMm: $totalprecipMm, totalprecipIn: $totalprecipIn, totalsnowCm: $totalsnowCm, avgvisKm: $avgvisKm, avgvisMiles: $avgvisMiles, avghumidity: $avghumidity, dailyWillItRain: $dailyWillItRain, dailyChanceOfRain: $dailyChanceOfRain, dailyWillItSnow: $dailyWillItSnow, dailyChanceOfSnow: $dailyChanceOfSnow, uv: $uv)';
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
+  _$DayApiModelCopyWith<_DayApiModel> get copyWith =>
+      __$DayApiModelCopyWithImpl<_DayApiModel>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$DayApiModelToJson(
+      this,
+    );
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$DayApiModelImpl &&
+            other is _DayApiModel &&
             (identical(other.condition, condition) ||
                 other.condition == condition) &&
             (identical(other.avgtempC, avgtempC) ||
@@ -476,7 +691,7 @@ class _$DayApiModelImpl implements _DayApiModel {
             (identical(other.uv, uv) || other.uv == uv));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -502,88 +717,172 @@ class _$DayApiModelImpl implements _DayApiModel {
         uv
       ]);
 
-  @JsonKey(ignore: true)
   @override
-  @pragma('vm:prefer-inline')
-  _$$DayApiModelImplCopyWith<_$DayApiModelImpl> get copyWith =>
-      __$$DayApiModelImplCopyWithImpl<_$DayApiModelImpl>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$DayApiModelImplToJson(
-      this,
-    );
+  String toString() {
+    return 'DayApiModel(condition: $condition, avgtempC: $avgtempC, maxtempC: $maxtempC, maxtempF: $maxtempF, mintempC: $mintempC, mintempF: $mintempF, avgtempF: $avgtempF, maxwindMph: $maxwindMph, maxwindKph: $maxwindKph, totalprecipMm: $totalprecipMm, totalprecipIn: $totalprecipIn, totalsnowCm: $totalsnowCm, avgvisKm: $avgvisKm, avgvisMiles: $avgvisMiles, avghumidity: $avghumidity, dailyWillItRain: $dailyWillItRain, dailyChanceOfRain: $dailyChanceOfRain, dailyWillItSnow: $dailyWillItSnow, dailyChanceOfSnow: $dailyChanceOfSnow, uv: $uv)';
   }
 }
 
-abstract class _DayApiModel implements DayApiModel {
-  const factory _DayApiModel(
-      {required final ConditionApiModel condition,
-      required final double avgtempC,
-      final double? maxtempC,
-      final double? maxtempF,
-      final double? mintempC,
-      final double? mintempF,
-      final double? avgtempF,
-      final double? maxwindMph,
-      final double? maxwindKph,
-      final double? totalprecipMm,
-      final double? totalprecipIn,
-      final double? totalsnowCm,
-      final double? avgvisKm,
-      final double? avgvisMiles,
-      final double? avghumidity,
-      final double? dailyWillItRain,
-      final double? dailyChanceOfRain,
-      final double? dailyWillItSnow,
-      final double? dailyChanceOfSnow,
-      final double? uv}) = _$DayApiModelImpl;
+/// @nodoc
+abstract mixin class _$DayApiModelCopyWith<$Res>
+    implements $DayApiModelCopyWith<$Res> {
+  factory _$DayApiModelCopyWith(
+          _DayApiModel value, $Res Function(_DayApiModel) _then) =
+      __$DayApiModelCopyWithImpl;
+  @override
+  @useResult
+  $Res call(
+      {ConditionApiModel condition,
+      double avgtempC,
+      double? maxtempC,
+      double? maxtempF,
+      double? mintempC,
+      double? mintempF,
+      double? avgtempF,
+      double? maxwindMph,
+      double? maxwindKph,
+      double? totalprecipMm,
+      double? totalprecipIn,
+      double? totalsnowCm,
+      double? avgvisKm,
+      double? avgvisMiles,
+      double? avghumidity,
+      double? dailyWillItRain,
+      double? dailyChanceOfRain,
+      double? dailyWillItSnow,
+      double? dailyChanceOfSnow,
+      double? uv});
 
-  factory _DayApiModel.fromJson(Map<String, dynamic> json) =
-      _$DayApiModelImpl.fromJson;
-
   @override
-  ConditionApiModel get condition;
-  @override
-  double get avgtempC;
-  @override
-  double? get maxtempC;
-  @override
-  double? get maxtempF;
-  @override
-  double? get mintempC;
-  @override
-  double? get mintempF;
-  @override
-  double? get avgtempF;
-  @override
-  double? get maxwindMph;
-  @override
-  double? get maxwindKph;
-  @override
-  double? get totalprecipMm;
-  @override
-  double? get totalprecipIn;
-  @override
-  double? get totalsnowCm;
-  @override
-  double? get avgvisKm;
-  @override
-  double? get avgvisMiles;
-  @override
-  double? get avghumidity;
-  @override
-  double? get dailyWillItRain;
-  @override
-  double? get dailyChanceOfRain;
-  @override
-  double? get dailyWillItSnow;
-  @override
-  double? get dailyChanceOfSnow;
-  @override
-  double? get uv;
-  @override
-  @JsonKey(ignore: true)
-  _$$DayApiModelImplCopyWith<_$DayApiModelImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+  $ConditionApiModelCopyWith<$Res> get condition;
 }
+
+/// @nodoc
+class __$DayApiModelCopyWithImpl<$Res> implements _$DayApiModelCopyWith<$Res> {
+  __$DayApiModelCopyWithImpl(this._self, this._then);
+
+  final _DayApiModel _self;
+  final $Res Function(_DayApiModel) _then;
+
+  /// Create a copy of DayApiModel
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @pragma('vm:prefer-inline')
+  $Res call({
+    Object? condition = null,
+    Object? avgtempC = null,
+    Object? maxtempC = freezed,
+    Object? maxtempF = freezed,
+    Object? mintempC = freezed,
+    Object? mintempF = freezed,
+    Object? avgtempF = freezed,
+    Object? maxwindMph = freezed,
+    Object? maxwindKph = freezed,
+    Object? totalprecipMm = freezed,
+    Object? totalprecipIn = freezed,
+    Object? totalsnowCm = freezed,
+    Object? avgvisKm = freezed,
+    Object? avgvisMiles = freezed,
+    Object? avghumidity = freezed,
+    Object? dailyWillItRain = freezed,
+    Object? dailyChanceOfRain = freezed,
+    Object? dailyWillItSnow = freezed,
+    Object? dailyChanceOfSnow = freezed,
+    Object? uv = freezed,
+  }) {
+    return _then(_DayApiModel(
+      condition: null == condition
+          ? _self.condition
+          : condition // ignore: cast_nullable_to_non_nullable
+              as ConditionApiModel,
+      avgtempC: null == avgtempC
+          ? _self.avgtempC
+          : avgtempC // ignore: cast_nullable_to_non_nullable
+              as double,
+      maxtempC: freezed == maxtempC
+          ? _self.maxtempC
+          : maxtempC // ignore: cast_nullable_to_non_nullable
+              as double?,
+      maxtempF: freezed == maxtempF
+          ? _self.maxtempF
+          : maxtempF // ignore: cast_nullable_to_non_nullable
+              as double?,
+      mintempC: freezed == mintempC
+          ? _self.mintempC
+          : mintempC // ignore: cast_nullable_to_non_nullable
+              as double?,
+      mintempF: freezed == mintempF
+          ? _self.mintempF
+          : mintempF // ignore: cast_nullable_to_non_nullable
+              as double?,
+      avgtempF: freezed == avgtempF
+          ? _self.avgtempF
+          : avgtempF // ignore: cast_nullable_to_non_nullable
+              as double?,
+      maxwindMph: freezed == maxwindMph
+          ? _self.maxwindMph
+          : maxwindMph // ignore: cast_nullable_to_non_nullable
+              as double?,
+      maxwindKph: freezed == maxwindKph
+          ? _self.maxwindKph
+          : maxwindKph // ignore: cast_nullable_to_non_nullable
+              as double?,
+      totalprecipMm: freezed == totalprecipMm
+          ? _self.totalprecipMm
+          : totalprecipMm // ignore: cast_nullable_to_non_nullable
+              as double?,
+      totalprecipIn: freezed == totalprecipIn
+          ? _self.totalprecipIn
+          : totalprecipIn // ignore: cast_nullable_to_non_nullable
+              as double?,
+      totalsnowCm: freezed == totalsnowCm
+          ? _self.totalsnowCm
+          : totalsnowCm // ignore: cast_nullable_to_non_nullable
+              as double?,
+      avgvisKm: freezed == avgvisKm
+          ? _self.avgvisKm
+          : avgvisKm // ignore: cast_nullable_to_non_nullable
+              as double?,
+      avgvisMiles: freezed == avgvisMiles
+          ? _self.avgvisMiles
+          : avgvisMiles // ignore: cast_nullable_to_non_nullable
+              as double?,
+      avghumidity: freezed == avghumidity
+          ? _self.avghumidity
+          : avghumidity // ignore: cast_nullable_to_non_nullable
+              as double?,
+      dailyWillItRain: freezed == dailyWillItRain
+          ? _self.dailyWillItRain
+          : dailyWillItRain // ignore: cast_nullable_to_non_nullable
+              as double?,
+      dailyChanceOfRain: freezed == dailyChanceOfRain
+          ? _self.dailyChanceOfRain
+          : dailyChanceOfRain // ignore: cast_nullable_to_non_nullable
+              as double?,
+      dailyWillItSnow: freezed == dailyWillItSnow
+          ? _self.dailyWillItSnow
+          : dailyWillItSnow // ignore: cast_nullable_to_non_nullable
+              as double?,
+      dailyChanceOfSnow: freezed == dailyChanceOfSnow
+          ? _self.dailyChanceOfSnow
+          : dailyChanceOfSnow // ignore: cast_nullable_to_non_nullable
+              as double?,
+      uv: freezed == uv
+          ? _self.uv
+          : uv // ignore: cast_nullable_to_non_nullable
+              as double?,
+    ));
+  }
+
+  /// Create a copy of DayApiModel
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @pragma('vm:prefer-inline')
+  $ConditionApiModelCopyWith<$Res> get condition {
+    return $ConditionApiModelCopyWith<$Res>(_self.condition, (value) {
+      return _then(_self.copyWith(condition: value));
+    });
+  }
+}
+
+// dart format on

@@ -6,13 +6,12 @@ part of 'current.api.model.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$CurrentApiModelImpl _$$CurrentApiModelImplFromJson(
-        Map<String, dynamic> json) =>
+_CurrentApiModel _$CurrentApiModelFromJson(Map<String, dynamic> json) =>
     $checkedCreate(
-      r'_$CurrentApiModelImpl',
+      '_CurrentApiModel',
       json,
       ($checkedConvert) {
-        final val = _$CurrentApiModelImpl(
+        final val = _CurrentApiModel(
           condition: $checkedConvert('condition',
               (v) => ConditionApiModel.fromJson(v as Map<String, dynamic>)),
           lastUpdated: $checkedConvert(
@@ -22,10 +21,10 @@ _$CurrentApiModelImpl _$$CurrentApiModelImplFromJson(
           humidity: $checkedConvert('humidity', (v) => (v as num).toDouble()),
           feelslikeC:
               $checkedConvert('feelslike_c', (v) => (v as num).toDouble()),
-          lastUpdatedEpoch:
-              $checkedConvert('last_updated_epoch', (v) => v as int?),
+          lastUpdatedEpoch: $checkedConvert(
+              'last_updated_epoch', (v) => (v as num?)?.toInt()),
           tempF: $checkedConvert('temp_f', (v) => (v as num?)?.toDouble()),
-          isDay: $checkedConvert('is_day', (v) => v as int?),
+          isDay: $checkedConvert('is_day', (v) => (v as num?)?.toInt()),
           windMph: $checkedConvert('wind_mph', (v) => (v as num?)?.toDouble()),
           windDegree:
               $checkedConvert('wind_degree', (v) => (v as num?)?.toDouble()),
@@ -73,8 +72,7 @@ _$CurrentApiModelImpl _$$CurrentApiModelImplFromJson(
       },
     );
 
-Map<String, dynamic> _$$CurrentApiModelImplToJson(
-        _$CurrentApiModelImpl instance) =>
+Map<String, dynamic> _$CurrentApiModelToJson(_CurrentApiModel instance) =>
     <String, dynamic>{
       'condition': instance.condition.toJson(),
       'last_updated': instance.lastUpdated.toIso8601String(),

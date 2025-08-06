@@ -6,12 +6,12 @@ part of 'astro.api.model.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$AstroApiModelImpl _$$AstroApiModelImplFromJson(Map<String, dynamic> json) =>
+_AstroApiModel _$AstroApiModelFromJson(Map<String, dynamic> json) =>
     $checkedCreate(
-      r'_$AstroApiModelImpl',
+      '_AstroApiModel',
       json,
       ($checkedConvert) {
-        final val = _$AstroApiModelImpl(
+        final val = _AstroApiModel(
           sunrise: $checkedConvert('sunrise', (v) => v as String),
           sunset: $checkedConvert('sunset', (v) => v as String),
           moonrise: $checkedConvert('moonrise', (v) => v as String?),
@@ -28,7 +28,7 @@ _$AstroApiModelImpl _$$AstroApiModelImplFromJson(Map<String, dynamic> json) =>
       },
     );
 
-Map<String, dynamic> _$$AstroApiModelImplToJson(_$AstroApiModelImpl instance) =>
+Map<String, dynamic> _$AstroApiModelToJson(_AstroApiModel instance) =>
     <String, dynamic>{
       'sunrise': instance.sunrise,
       'sunset': instance.sunset,

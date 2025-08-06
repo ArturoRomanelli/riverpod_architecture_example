@@ -7,7 +7,7 @@ import '../src/splash/pages/splash_page.dart';
 part 'config.routes.g.dart';
 
 @TypedGoRoute<HomeRoute>(path: '/')
-class HomeRoute extends GoRouteData {
+class HomeRoute extends GoRouteData with _$HomeRoute {
   const HomeRoute();
 
   @override
@@ -17,7 +17,7 @@ class HomeRoute extends GoRouteData {
 }
 
 @TypedGoRoute<SplashRoute>(path: '/splash')
-class SplashRoute extends GoRouteData {
+class SplashRoute extends GoRouteData with _$SplashRoute {
   const SplashRoute();
 
   @override

@@ -6,13 +6,12 @@ part of 'astronomy.api.model.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$AstronomyApiModelImpl _$$AstronomyApiModelImplFromJson(
-        Map<String, dynamic> json) =>
+_AstronomyApiModel _$AstronomyApiModelFromJson(Map<String, dynamic> json) =>
     $checkedCreate(
-      r'_$AstronomyApiModelImpl',
+      '_AstronomyApiModel',
       json,
       ($checkedConvert) {
-        final val = _$AstronomyApiModelImpl(
+        final val = _AstronomyApiModel(
           astronomy: $checkedConvert(
               'astronomy',
               (v) =>
@@ -27,8 +26,7 @@ _$AstronomyApiModelImpl _$$AstronomyApiModelImplFromJson(
       },
     );
 
-Map<String, dynamic> _$$AstronomyApiModelImplToJson(
-        _$AstronomyApiModelImpl instance) =>
+Map<String, dynamic> _$AstronomyApiModelToJson(_AstronomyApiModel instance) =>
     <String, dynamic>{
       'astronomy': instance.astronomy.toJson(),
       'location': instance.location?.toJson(),

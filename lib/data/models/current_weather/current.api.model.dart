@@ -7,7 +7,7 @@ part 'current.api.model.freezed.dart';
 part 'current.api.model.g.dart';
 
 @freezed
-class CurrentApiModel with _$CurrentApiModel {
+abstract class CurrentApiModel with _$CurrentApiModel {
   const factory CurrentApiModel({
     required ConditionApiModel condition,
     required DateTime lastUpdated,

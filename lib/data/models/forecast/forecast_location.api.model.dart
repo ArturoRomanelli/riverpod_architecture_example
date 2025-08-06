@@ -6,7 +6,7 @@ part 'forecast_location.api.model.freezed.dart';
 part 'forecast_location.api.model.g.dart';
 
 @freezed
-class ForecastLocationApiModel with _$ForecastLocationApiModel {
+abstract class ForecastLocationApiModel with _$ForecastLocationApiModel {
   const factory ForecastLocationApiModel(
     String? name,
     String? region,

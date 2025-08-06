@@ -7,7 +7,7 @@ part 'current.api.model.freezed.dart';
 part 'current.api.model.g.dart';
 
 @freezed
-class CurrentForecastApiModel with _$CurrentForecastApiModel {
+abstract class CurrentForecastApiModel with _$CurrentForecastApiModel {
   const factory CurrentForecastApiModel({
     required ConditionApiModel condition,
     required DateTime lastUpdated,

@@ -6,12 +6,11 @@ part of 'day.api.model.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$DayApiModelImpl _$$DayApiModelImplFromJson(Map<String, dynamic> json) =>
-    $checkedCreate(
-      r'_$DayApiModelImpl',
+_DayApiModel _$DayApiModelFromJson(Map<String, dynamic> json) => $checkedCreate(
+      '_DayApiModel',
       json,
       ($checkedConvert) {
-        final val = _$DayApiModelImpl(
+        final val = _DayApiModel(
           condition: $checkedConvert('condition',
               (v) => ConditionApiModel.fromJson(v as Map<String, dynamic>)),
           avgtempC: $checkedConvert('avgtemp_c', (v) => (v as num).toDouble()),
@@ -74,7 +73,7 @@ _$DayApiModelImpl _$$DayApiModelImplFromJson(Map<String, dynamic> json) =>
       },
     );
 
-Map<String, dynamic> _$$DayApiModelImplToJson(_$DayApiModelImpl instance) =>
+Map<String, dynamic> _$DayApiModelToJson(_DayApiModel instance) =>
     <String, dynamic>{
       'condition': instance.condition.toJson(),
       'avgtemp_c': instance.avgtempC,

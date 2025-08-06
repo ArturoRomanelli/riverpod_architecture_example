@@ -6,17 +6,17 @@ part of 'hour.api.model.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$HourApiModelImpl _$$HourApiModelImplFromJson(Map<String, dynamic> json) =>
+_HourApiModel _$HourApiModelFromJson(Map<String, dynamic> json) =>
     $checkedCreate(
-      r'_$HourApiModelImpl',
+      '_HourApiModel',
       json,
       ($checkedConvert) {
-        final val = _$HourApiModelImpl(
-          $checkedConvert('time_epoch', (v) => v as int?),
+        final val = _HourApiModel(
+          $checkedConvert('time_epoch', (v) => (v as num?)?.toInt()),
           $checkedConvert('time', (v) => v as String?),
           $checkedConvert('temp_c', (v) => (v as num?)?.toDouble()),
           $checkedConvert('temp_f', (v) => (v as num?)?.toDouble()),
-          $checkedConvert('is_day', (v) => v as int?),
+          $checkedConvert('is_day', (v) => (v as num?)?.toInt()),
           $checkedConvert(
               'condition',
               (v) => v == null
@@ -84,7 +84,7 @@ _$HourApiModelImpl _$$HourApiModelImplFromJson(Map<String, dynamic> json) =>
       },
     );
 
-Map<String, dynamic> _$$HourApiModelImplToJson(_$HourApiModelImpl instance) =>
+Map<String, dynamic> _$HourApiModelToJson(_HourApiModel instance) =>
     <String, dynamic>{
       'time_epoch': instance.timeEpoch,
       'time': instance.time,

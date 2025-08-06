@@ -6,7 +6,7 @@ import 'forecast_day.model.dart';
 part 'forecast_weather.model.freezed.dart';
 
 @freezed
-class ForecastWeather with _$ForecastWeather {
+abstract class ForecastWeather with _$ForecastWeather {
   const factory ForecastWeather({
     /// latest update of the weather conditions
     required DateTime updatedAt,

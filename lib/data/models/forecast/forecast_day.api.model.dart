@@ -9,7 +9,7 @@ part 'forecast_day.api.model.freezed.dart';
 part 'forecast_day.api.model.g.dart';
 
 @freezed
-class ForecastDayApiModel with _$ForecastDayApiModel {
+abstract class ForecastDayApiModel with _$ForecastDayApiModel {
   const factory ForecastDayApiModel({
     required DateTime date,
     required DayApiModel day,
